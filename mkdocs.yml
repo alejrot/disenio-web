@@ -1,0 +1,78 @@
+site_name: Basicos Web
+theme: 
+  name: material
+
+  features:
+    # codigo
+    - content.code.copy
+    # - content.code.select   # prestacion premium
+    - content.code.annotate 
+    # tabs
+    - content.tabs.link
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Cambia a modo oscuro
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Cambia a modo claro 
+
+
+markdown_extensions: 
+  # bloques remarcados
+  - admonition
+  - pymdownx.details
+
+  # bloques de codigo
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  # empojis e iconos integrados
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # tablas
+  - tables
+  # notas al pie
+  - footnotes
+  # formatos
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+plugins:
+  - social:
+      debug: true
+
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+
+
+
+nav:
+  - Indice: index.md
+  - contenidos:
+    - HTML: HTML.md
+    - CSS: CSS.md
+    - Bootstrap: Bootstrap.md
