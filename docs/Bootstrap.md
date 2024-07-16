@@ -21,6 +21,7 @@ Es un conjunto de contenedores , filas y columnas que definen cómo presentar y 
 
 Cada fila está dividida en 12 columnas.
 Clases para la grid:
+
 - .row
 - .col-
 - .col-sm-
@@ -36,13 +37,16 @@ ejemplo: uso de clase row
 </div>
 ```
 
-Tamaños según ancho de ventana (viewport)
-- xs → extra small <576px
-- sm → small	>=576px	
-- md → medium	 >=768px
-- lg → large >=992px
-- xl → extra large >= 1200px
-- xxl → extra extra large =>1400px
+Tamaños según ancho de ventana (*viewport*):
+
+| opción | significado | dimensiones|
+|:---:|:---|:---:|
+| **xs**  | *extra small* | < 576 px |
+| **sm**  | *small*	| > 576 px	|
+| **md**  | *medium*	| > 768 px |
+| **lg**  | *large* | > 992 px |
+| **xl**  | *extra large* | > 1200 px |
+| **xxl** | *extra extra large* | > 1400 px |
 
 
 ## Breakpoint
@@ -61,10 +65,13 @@ Ejemplo: un contenedor con una única fila subdividida en dos columnas visuales
 </div>
 ```
 Hay dos clases de contenedores
+
 - **.container:** crea un contenedor adaptable con ancho máximo fijo dependiente del tamaño de dispositivo
 - **.container-fluid:** crea un contenedor adaptable que cubre el 100% del ancho de ventana.
 
-Un contenedor puede estar atado a los viewpoints: Ejemplo: un container “large" se puede definir aí:
+Un contenedor puede estar atado a los viewpoints.
+
+ Ejemplo: un container “large" se puede definir así:
 ```html
 <div class="container-lg">
 	...
@@ -75,8 +82,10 @@ Un contenedor puede estar atado a los viewpoints: Ejemplo: un container “large
 
 ### CDN
 Para poder adjuntar de manera online Bootstrap al proyecto nos dirigimos a la [documentación de la página oficial](https://getbootstrap.com/docs/5.3/getting-started/download/) y copiamos los enlaces indicados en la sección “CDN via jsDelivr":
+
 - El enlace de CSS va dentro del head del archivo HTML;
 - El enlace de funcionalidades de JavaScript va en el body del HTML , justo al final.
+
 Ejemplo:
 ```html
 <!DOCTYPE html >
@@ -100,7 +109,7 @@ Ejemplo:
 
 ### Descarga manual (ZIP)
 
-Se puede descargar el archivo comprimido para adjuntarlo al proyect. En ese caso los enlaces del archivo HTML deberán apuntar a los archivos clave del paquete
+Se puede descargar el archivo comprimido de Bootstrap para descomprimirlo y adjuntarlo completo al proyecto. En ese caso los enlaces del archivo HTML deberán apuntar a los archivos clave del paquete.
 
 ### Gestores de paquetes
 
@@ -152,6 +161,7 @@ CSS Flexible Box Layout. Sirve para que los elementos adaptables ubicados dentro
 ## flex-direction
 Establece el eje principal del contenedor, la dirección en la cual se colocan los elementos internos.
 Opciones: 
+
 - row: fila, de izquierda a derecha;
 - row-reverse: fila, de derecha a izquierda
 - column: columna, de arriba a abajo
@@ -159,6 +169,7 @@ Opciones:
 
 ## justify-content
 Define cómo se distribuyen los elementos en el eje principal. Clases de Bootstrap prearmadas:
+
 - justify-content-start
 - justify-content-end
 - justify-content-center
@@ -168,6 +179,7 @@ Define cómo se distribuyen los elementos en el eje principal. Clases de Bootstr
 
 ## align-items
 Define cómo se distribuyen los elementos en el eje perpendicular al eje principal. Opciones:
+
 - align-items-start
 - align-items-end
 - align-items-center
@@ -176,6 +188,7 @@ Define cómo se distribuyen los elementos en el eje perpendicular al eje princip
 
 ## flex-wrap
 Determina si los elementos deben ajustarse para que estén en una misma línea o si se les permite distribuirse en varias líneas si es necesario. Opciones:
+
 - flex-nowrap	→ elementos “apretados" en la misma línea
 - flex-wrap 	→ elementos en varias líneas si no hay espacio
 - flex-wrap-reverse
