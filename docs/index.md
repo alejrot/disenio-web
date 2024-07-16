@@ -19,7 +19,7 @@ Tutoriales y documentación elemental sobre maquetado y estilo de páginas web.
 
 ## Frameworks
 
-[BootStrap](Bootstrap.md)
+[Bootstrap](Bootstrap.md)
 
 
 

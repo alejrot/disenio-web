@@ -29,7 +29,7 @@ Los comentarios se hacen con la secuencia:
 ## Elemento
 Componente básico de un archivo HTML.
 Etiquetas (Tag)
-Sirven para definir los elementos en el archivo HTML. Son marcadas con paréntesis angulares (**<>**). Normalmente las etiquetas se usan de a pares, una para apertura **(<___>**) y otra para cierre ( **</___>**) la cual incluye una barra. Entre etiquetas se distribuye el contenido.
+Sirven para definir los elementos en el archivo HTML. Son marcadas con paréntesis angulares (`<>`). Normalmente las etiquetas se usan de a pares, una para apertura (`<etiqueta>`) y otra para cierre ( `</etiqueta>`) la cual incluye una barra. Entre etiquetas se distribuye el contenido.
 Ejemplos:
 
 ```html 
@@ -48,7 +48,8 @@ Ejemplo:
 ```html
 <img/>
 ```
-La etiqueta `<html>` representa la raíz del archivo e incluye dos grandes conjuntos: la cabeza (`head`) y el cuerpo (`body`). `body` encapsula el contenido de la página en tanto que `head`  incluye archivos externos ,archivos de configuración etc.
+La etiqueta `<html>` representa la raíz del archivo e incluye dos grandes conjuntos: la cabeza (`head`) y el cuerpo (`body`). `body` encapsula el contenido de la página y suele contener el contenido JavaScript (programas auxiliares),
+en tanto que `head`  incluye el tíyulo de página, archivos estilos, etc.
 
 
 ```html title="Organización página HTML"
@@ -56,13 +57,15 @@ La etiqueta `<html>` representa la raíz del archivo e incluye dos grandes conju
 <html>
 	<head>
 	<!-- Contenido del encabezamiento -->
+        <title> Mi titulo de pagina </title>	
 	</head>
 	<body>
     <!-- Contenido del cuerpo -->
     </body> 
 </html>
 ```
-Se recomienda indentar con dos espacios. En VSCode se puede cambiar el indentado presionando **'Ctrl' + '['** ó **'Ctrl' + ']'**.
+!!! hint "Hint: indentado"
+    Se recomienda indentar con dos espacios. En VSCode se puede cambiar el indentado presionando **'Ctrl' + '['** ó **'Ctrl' + ']'**.
 
 ## Atributos
 Son elementos que alteran aspectos de los elementos.
@@ -80,7 +83,18 @@ La declaración de idioma afecta a los buscadores pero también a los caracteres
 
 El orden en que se asignan los atributos a un mismo elemento es irrelevante.
 
-## Encabezamientos (*heading*)
+
+
+
+
+
+
+## Elementos gráficos
+
+A continuación se enumeran los elementos de HTML que permiten crear objetos gráficos: textos, botones, imágenes, etc.
+
+
+### Encabezamientos (*heading*)
 Los encabezamientos permiten indicar títulos para los contenidos. Van dentro del body del archivo html. Hay seis niveles de jerarquía, del 1 (más importante) al 6 (menos importante).
 ```html title="Encabezamientos"
 <body>
@@ -94,7 +108,7 @@ Los encabezamientos permiten indicar títulos para los contenidos. Van dentro de
 !!! info "Jerarquía y formato"
     Si bien HTML les da a cada nivel de *headings* un tamaño distinto, la elección de etiquetas debe hacerse por **importancia del contenido** y no por formato, el cual puede alterarse mediante CSS. De esta forma los buscadores web pueden clasificar las páginas web (**SEO**) en base a los *headings*.
 
-## Párrafos
+### Párrafos
 Los párrafos se encapsulan con las etiquetas `<p>` y `</p>`. Los párrafos van dentro del body.
 
 ```html title="Párrafo"
@@ -105,28 +119,9 @@ Los párrafos se encapsulan con las etiquetas `<p>` y `</p>`. Los párrafos van 
 
 **Hint:** Para que un texto se vea repartido en varios renglones del editor de texto pulsar Alt + Z.
 
-## Main
 
-Indica el contenido principal del `body` entre dos etiquetas:
-```html title="Contenido principal - main"
-<body>
-    <main>
-        <!-- Contenido principal -->
-  </main>
-  <!-- ... -->
-</body>
-```
-El contenido `main` **debe ser único** en la página y no descender de elementos como:
-```html
-<article> 
-<aside>
-<footer>
-<footer>
-<header> 
-<gav>
-```
 
-## Imágenes
+### Imágenes
 Se indican con etiquetas <img> que son autocontenidas.Si la imagen está ubicada en un servidor remoto se indica en el atributo src (source):
 ```html
 <img src="https://direccion_completa.jpg">
@@ -144,7 +139,7 @@ El directorio de referencia es el que incluye al archivo HTML.
 !!! warning "Nombres con caracteres no ASCII"
     Debe evitarse el uso de caracteres no ASCII (ejemplo: la *Ñ*) para nombres de archivo dado que pueden dar lugar a errores imprevistos.
 
-## Enlaces Externos
+### Enlaces Externos
 
 Los enlaces se indican con las etiquetas <a> y </a> y el atributo href indica la dirección de destino:
 ```html title="Enlace externo"
@@ -165,7 +160,7 @@ Las opciones agregadas son:
 - `noreferrer`: previene enviar el *header* del remitente a la nueva página para prevenir una posible suplantación de identidad (*spoofing*)
 
 
-## Enlaces a Secciones Internas
+### Enlaces a Secciones Internas
 
 Estos enlaces usan también las etiquetas `<a>` y `</a>` pero con distintos valores de atributos:
 
@@ -186,7 +181,7 @@ Para apuntar a un sector específico se indica el atributo id (indicador único)
     <a href="#seccion-5"> Ir al Tema 5 </a>
     ```
 
-## Enlaces con Imágenes
+### Enlaces con Imágenes
 
 Las imágenes se pueden usar como enlace.Para ello se coloca un elemento del tipo imagen dentro de un elemento enlace:
 ```html title="Enlace con imagenes"
@@ -197,7 +192,7 @@ Las imágenes se pueden usar como enlace.Para ello se coloca un elemento del tip
 ```
 Pueden añadirse todos los atributos vistos previamente.
 
-## Enlaces Muertos
+### Enlaces Muertos
 
 Un enlace vacío puede crearse con el numeral , esto es útil en la etapa de diseño:
 
@@ -205,7 +200,7 @@ Un enlace vacío puede crearse con el numeral , esto es útil en la etapa de dis
 <a href="#"> (Ir a ningún sitio) </a>
 ```
 
-## Listas no ordenadas
+### Listas no ordenadas
 
 Las listas no ordenadas (*unordered list*) usan la etiqueta `#!html ul` para agrupar los elementos de la lista (*list items*) indicados con la etiqueta `li` : 
 ```html title="Listas no ordenadas"
@@ -217,7 +212,7 @@ Las listas no ordenadas (*unordered list*) usan la etiqueta `#!html ul` para agr
 </ul>
 ```
 
-## Listas ordenadas
+### Listas ordenadas
 
 Las listas ordenadas (*ordered list*) usan la etiqueta `ol` para agrupar los elementos de la lista (*list items*) indicados con la etiqueta `li` : 
 ```html title="Listas ordenadas"
@@ -229,7 +224,73 @@ Las listas ordenadas (*ordered list*) usan la etiqueta `ol` para agrupar los ele
 ```
 Los números se asignan automáticamente desde el uno en adelante.
 
-## Negrita y Strong
+
+
+### Línea Horizontal
+La *horizontal rule*  se indica con la etiqueta `hr`:
+```html title="Linea horizontal"
+<hr>
+```
+
+### Salto de Línea 
+Para forzar un salto de línea se usa la etiqueta ***`br`***:
+```html title="Salto de línea"
+<br>
+```
+
+### Div
+La etiqueta `div` sirve para definir “contenedores" de elementos. Se usa para agrupar múltiples elementos , crear componentes, etc.
+```html title="Contenedores - div"
+<div>   
+	<!-- elementos internos -->
+</div>
+```
+
+### Barra de Progreso
+Con la etiqueta meter se puede crear fácilmente una barra de progreso. Ejemplo: barra al 50%
+```html
+<meter min="0" max="100" value="50"> </meter>
+```
+Otra opción es usar la etiqueta progress:
+```html
+<progress min="0" max="100" value="50"> 50% </progress>
+```
+El texto entre etiquetas no se ve en todos los navegadores. 
+
+
+### Marquesina
+Una marquesina es un texto que se desliza solo por la pantalla. Utiliza la etiqueta marquee. 
+Ejemplo: un título animado. 
+```html title="Titulo en Marquesina"
+<marquee> <h1> Mi Título Móvil  </h1></marquee>
+```
+
+### Acordeón (texto desplegable)
+Con la etiqueta `details` se crea un texto desplegable con un clic, cuya parte siempre visible se indica con la etiqueta summary. Útil para dar información extra sobre un elemento.
+```html
+<details>
+    <summary> Texto siempre visible </summary>
+    Todo el texto adicional listo para ser visto con un click.
+</details>
+```
+
+### Diálogos
+Un cuadro de diálogo siempre abierto:
+```html
+<dialog open> Mi texto </dialog>
+```
+Para que el cuadro de diálogo se abra al presionar un botón y se cierre con otro:
+```html
+<button onclick="dlg.showModal()">  Abrir </button>
+    <dialog id="dlg"> 
+    <button onclick="dlg.close()">  X </button>
+    Mi texto 
+</dialog>	
+```
+
+## Elementos de estilos
+
+### Negrita y Strong
 
 Los textos más importantes pueden marcarse con la etiqueta ***strong***, esto hace ver los caracteres en negrita:
 ```html title="Negrita - Strong"
@@ -239,28 +300,40 @@ Otra opción es usar la etiqueta `b` (bold), aunque esta se está evitando actua
 ```html title="Negrita - Bold"
 <b> Texto </b>
 ```
-## Cursiva
+### Cursiva
 
 El texto en cursiva se indica con la etiqueta `em`:
 ```html title="Cursiva"
 <em> Texto en cursiva </em>
 ```
-## Tachado
+### Tachado
 El tachado de texto se hace con la etiqueta `s` (*strikethrough*)
 ```html title="Tachado"
 <s> Texto tachado </s>
 ```
-## Línea Horizontal
-La *horizontal rule*  se indica con la etiqueta `hr`:
-```html title="Linea horizontal"
-<hr>
+
+### Small
+Esta etiqueta hace la letra más pequeña. Es muy habitual su uso en los pies de página. 
+
+Uso:
+```html
+<small> texto pequeño </small>
 ```
-## Salto de Línea 
-Para forzar un salto de línea se usa la etiqueta ***`br`***:
-```html title="Salto de línea"
-<br>
+
+### Marcado texto
+Usando la etiqueta *mark* podemos marcar trozos de texto al estilo resaltador.
+```html
+<p>
+	Un parrafo donde uso un poco  <mark style="background-color=yellow">  el marcador </mark>
+</p>
 ```
-## Formularios
+
+
+
+
+## Elementos de entrada de usuario
+
+### Formularios
 
 Los formularios usan la etiqueta `form` para agrupar sus elementos. En el ejemplo se crea un espacio para escribir un texto de entrada (`input`) y un botón (`button`) para ordenar el envío. 
 ```html title="Formulario"
@@ -273,7 +346,7 @@ El atributo `placeholder` indica un texto marcador de posición, que da una pist
 
 Los distintos elementos se dibujan en pantalla uno al lado del otro. Para colocarlos en vertical usar el salto de línea  (`br`) .
 
-## Botones de Radio 
+### Botones de Radio 
 
 El botón de opción (o botón de radio) se crea con la etiqueta 
 ```html title="Botón radio"
@@ -290,7 +363,7 @@ La etiqueta `label` puede tener indicado el atributo `for` que la vincula al ide
 </label>
 ```
 
-## Grupo de Botones de Radio
+### Grupo de Botones de Radio
 
 Para que varios botones forman parte de un mismo grupo y sólo uno pueda seleccionarse a la vez debe agregarse el atributo `name` a cada botón y darles el mismo valor. 
 
@@ -299,7 +372,7 @@ Ejemplo:
 <input type="radio" id="opcion_1" name="nombre_opciones"> Opción 1
 <input type="radio" id="opcion_2" name="nombre_opciones"> Opción 2
 ```
-## Casillas de Verificación
+### Casillas de Verificación
 Las checkbox  o casillas de verificación se definen también con la etiqueta *input*:
 ```html
 <input type="checkbox"> Texto descripción
@@ -309,7 +382,7 @@ Con el atributo checked se puede dejar marcado de forma predeterminada la casill
 <input type="checkbox" checked> Texto descripción
 ```
 
-## Value
+### Value
 
 El atributo valor (`value`) es el argumento que se enviará al servidor si la casilla ó botón de radio fue seleccionado. 
 
@@ -320,15 +393,35 @@ Ejemplo: casillas verificacion.
 <input type="checkbox" value="opcion_2" > Opción 2
 ```
 
-## Div
-La etiqueta `div` sirve para definir “contenedores" de elementos. Se usa para agrupar elementos 
+
+
+## Elementos de Jerarquía
+
+Estos elementos de HTML afectan a la distribución y la prioridad de los componentes internos de la página.
+
+
+### Main
+
+Indica el contenido principal del `body` entre dos etiquetas:
+```html title="Contenido principal - main"
+<body>
+    <main>
+        <!-- Contenido principal -->
+  </main>
+  <!-- ... -->
+</body>
+```
+El contenido `main` **debe ser único** en la página y no descender de elementos como:
 ```html
-<div>
-	<!-- elementos internos -->
-</div>
+<article> 
+<aside>
+<footer>
+<footer>
+<header> 
+<gav>
 ```
 
-## Pie de Página
+### Pie de Página
 El pie de página va afuera de `main` (pero dentro del *body*). Utiliza la etiqueta `footer`. 
 
 Ejemplo típico: texto de licencia y enlace al post original:
@@ -338,21 +431,8 @@ Ejemplo típico: texto de licencia y enlace al post original:
 </footer>
 ```
 
-## Small
-Esta etiqueta hace la letra más pequeña. Es muy habitual en los pies de página. 
 
-Uso:
-```html
-<small> texto pequeño </small>
-```
 
-## Head
-*Head* contiene todos los metadatos de la página. Va antes del *body*. Ejemplo sencillo:
-```html
-<head>
-    <title> Mi titulo de pagina </title>	
-</head>
-```
 
 ## Contenido editable
 Podemos permitir que el usuario de la página altere el texto de los elementos gracias al atributo *contenteditable*. Ejemplos:
@@ -371,49 +451,12 @@ Para asignar un color por defecto al botón se añade el atributo *value*:
 <input type="color" value="green;">
 ```
 
-## Marcado texto
-Usando la etiqueta *mark* podemos marcar trozos de texto al estilo resaltador.
-```html
-<p>
-	Un parrafo donde uso un poco  <mark style="background-color=yellow">  el marcador </mark>
-</p>
-```
-## Barra de Progreso
-Con la etiqueta meter se puede crear fácilmente una barra de progreso. Ejemplo: barra al 50%
-```html
-<meter min="0" max="100" value="50"> </meter>
-```
-Otra opción es usar la etiqueta progress:
-```html
-<progress min="0" max="100" value="50"> 50% </progress>
-```
-El texto entre etiquetas no se ve en todos los navegadores. 
+
 
 ## Corrector ortográfico
 Con habilitar el atributo ***spellcheck*** dentro de los elementos *input* se habilita la corrección ortográfica automática.
 
-## Acordeón (texto desplegable)
-Con la etiqueta details se crea un texto desplegable con un clic, cuya parte siempre visible se indica con la etiqueta summary. Útil para dar información extra sobre un elemento.
-```html
-<details>
-    <summary> Texto siempre visible </summary>
-    Todo el texto adicional listo para ser visto con un click.
-</details>
-```
 
-## Diálogos
-Un cuadro de diálogo siempre abierto:
-```html
-<dialog open> Mi texto </dialog>
-```
-Para que el cuadro de diálogo se abra al presionar un botón y se cierre con otro:
-```html
-<button onclick="dlg.showModal()">  Abrir </button>
-    <dialog id="dlg"> 
-    <button onclick="dlg.close()">  X </button>
-    Mi texto 
-</dialog>	
-```
 
 ## Relacionar label con input
 Algunas formas de poner el foco en el elemento de entrada clickeando sobre la etiqueta de texto relacionada.
@@ -453,12 +496,7 @@ Una entrada de texto puede tener valores opcionales predeterminados. Con la etiq
 </datalist>
 ```
 
-## Marquesina
-Una marquesina es un texto que se desliza solo por la pantalla. Utiliza la etiqueta marquee. 
-Ejemplo: un título animado. 
-```html
-<marquee> <h1> Mi Título Móvil  </h1></marquee>
-```
+
 
 ## Patterns para validar expresiones regulares
 El atributo pattern es el que permite exigir un formato de entrada al usuario. Asimismo el atributo title da un texto de ayuda y el atributo required obliga al usuario a cumplir para poder enviar. 
