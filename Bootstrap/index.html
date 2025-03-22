@@ -1,0 +1,1260 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../CSS/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Bootstrap - Basicos Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Bootstrap - Basicos Web" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="./assets/images/social/Bootstrap.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="None" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Bootstrap - Basicos Web" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="./assets/images/social/Bootstrap.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bootstrap" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Basicos Web" class="md-header__button md-logo" aria-label="Basicos Web" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Basicos Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bootstrap
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambia a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambia a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambia a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambia a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Basicos Web" class="md-nav__button md-logo" aria-label="Basicos Web" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Basicos Web
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Indice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    contenidos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            contenidos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HTML/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Bootstrap
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Bootstrap
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pilares-de-bootstrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pilares de Bootstrap
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anadir-bootstrap-al-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Añadir Bootstrap al proyecto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Añadir Bootstrap al proyecto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cdn" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descarga-manual-zip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descarga manual (ZIP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestores-de-paquetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestores de paquetes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#breve-dicccionario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breve dicccionario
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grid-cuadricula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grid (cuadrícula)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#breakpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breakpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contenedores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenedores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contenedores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contenedores-responsivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenedores responsivos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-la-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura de la grid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#componentes-de-bootstrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes de Bootstrap
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iconos-de-bootstrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iconos de bootstrap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iconos de bootstrap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web-font" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web font
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icono-svg-embebido" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ícono SVG embebido
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flexbox-en-bootstrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flexbox en Bootstrap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flexbox en Bootstrap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flexbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flexbox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clase-d-flex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clase d-flex
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flex-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      flex-direction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justify-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      justify-content
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#align-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      align-items
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flex-wrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      flex-wrap
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pilares-de-bootstrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pilares de Bootstrap
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anadir-bootstrap-al-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Añadir Bootstrap al proyecto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Añadir Bootstrap al proyecto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cdn" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descarga-manual-zip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descarga manual (ZIP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestores-de-paquetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestores de paquetes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#breve-dicccionario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breve dicccionario
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grid-cuadricula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grid (cuadrícula)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#breakpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breakpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contenedores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenedores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contenedores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contenedores-responsivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenedores responsivos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-la-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura de la grid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#componentes-de-bootstrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes de Bootstrap
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iconos-de-bootstrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iconos de bootstrap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iconos de bootstrap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web-font" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web font
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icono-svg-embebido" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ícono SVG embebido
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flexbox-en-bootstrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flexbox en Bootstrap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flexbox en Bootstrap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flexbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flexbox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clase-d-flex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clase d-flex
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flex-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      flex-direction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justify-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      justify-content
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#align-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      align-items
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flex-wrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      flex-wrap
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="bootstrap">BOOTSTRAP</h1>
+<p><a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Sitio oficial de Bootstrap</a></p>
+<p><a href="https://youtu.be/QCw0L6FupQ0?list=PL4ONm-ifcbQJ7zDmC2WR_vidFPmxDLraL">FreeCodeCamp - Aprende Bootstrap 5 - Curso de Bootstrap desde Cero</a></p>
+<h2 id="pilares-de-bootstrap">Pilares de Bootstrap</h2>
+<p>Bootstrap proporciona tres grandes prestaciones:</p>
+<ul>
+<li><strong>Grid:</strong> el sistema de maquetado adaptable </li>
+<li><strong>Componentes:</strong> recetas y componentes escritos en HTML fácilmente modificables por el diseñador.</li>
+<li><strong>Iconos:</strong> un pack de 2000 íconos en formato SVG listos para usar libremente, bajo licencia MIT.</li>
+</ul>
+<h2 id="anadir-bootstrap-al-proyecto">Añadir Bootstrap al proyecto</h2>
+<h3 id="cdn">CDN</h3>
+<p>Para poder adjuntar de manera online Bootstrap al proyecto nos dirigimos a la <a href="https://getbootstrap.com/docs/5.3/getting-started/download/">documentación de la página oficial</a> y copiamos los enlaces indicados en la sección “CDN via jsDelivr":</p>
+<ul>
+<li>El enlace de CSS va dentro del <em>head</em> del archivo HTML;</li>
+<li>El enlace de funcionalidades de JavaScript va en el <em>body</em> del HTML , justo al final.</li>
+</ul>
+<p>Ejemplo:
+<div class="language-html highlight"><span class="filename">Importando Bootstrap</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;!DOCTYPE html &gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;es&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        ...
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        ...
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="cm">&lt;!-- CSS Bootstrap --&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&quot;sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN&quot;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        ...
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        ...
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        ...
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="cm">&lt;!-- JS Bootstrap --&gt;</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js&quot;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&quot;sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL&quot;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<strong>CDN</strong> significa <em>Content Delivery Network</em>.</p>
+<h3 id="descarga-manual-zip">Descarga manual (ZIP)</h3>
+<p>Se puede descargar el archivo comprimido de Bootstrap para descomprimirlo y adjuntarlo completo al proyecto. En ese caso los enlaces del archivo HTML deberán apuntar a los archivos clave del paquete.</p>
+<h3 id="gestores-de-paquetes">Gestores de paquetes</h3>
+<p>Bootstrap tiene paquetes preparados para trabajar con gestores de paquetes como NPM, Yarn, etc.</p>
+<h2 id="breve-dicccionario">Breve dicccionario</h2>
+<ul>
+<li><strong>Framework:</strong> Estructura (base) para facilitar el desarrollo.</li>
+<li><strong>Framework CSS:</strong> son clases que permiten personalizar los elementos HTML</li>
+<li><strong>Responsive design (diseño adaptable):</strong> Diseño de página que permite adaptar los elementos internos al tamaño de la pantalla usada (PC, tablet, celular) y su orientación (horizontal, vertical).</li>
+</ul>
+<h2 id="grid-cuadricula">Grid (cuadrícula)</h2>
+<p>Es un conjunto de contenedores , filas y columnas que definen cómo presentar y alinear el contenido.</p>
+<p>Cada fila está dividida en 12 columnas.
+Cada elemento de una fila puede ocupar varias columnas.
+Las columnas de los elementos deben sumar 12. Si la suma supera 12 se crea automáticamente una nueva fila para ubicar los elementos sobrantes.</p>
+<p>Clases para la grid:</p>
+<ul>
+<li>.row</li>
+<li>.col</li>
+<li>.col-</li>
+<li>.col-sm-</li>
+<li>.col-md-</li>
+<li>.col-lg-</li>
+<li>.col-xl-</li>
+</ul>
+<p><em>row</em>: fila ; col (<em>column</em>): columna
+ejemplo: uso de clase row</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    ...
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<h2 id="breakpoint">Breakpoint</h2>
+<p>Un breakpoint es la dimensión (ancho) de ventana que define el umbral para el cambio de estilo. El uso de breakpoints permite diseñar distintas distribuciones de los componentes gráficos de la página en función del ancho de la ventana actual del navegador, permitiendo aprovechar mejor el espacio disponible.</p>
+<p>Breakpoints predefinidos según ancho de ventana (<em>viewport</em>):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">opción</th>
+<th style="text-align: left;">significado</th>
+<th style="text-align: center;">dimensiones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>xs</strong></td>
+<td style="text-align: left;"><em>extra small</em></td>
+<td style="text-align: center;">&lt; 576 px</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>sm</strong></td>
+<td style="text-align: left;"><em>small</em></td>
+<td style="text-align: center;">&gt; 576 px</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>md</strong></td>
+<td style="text-align: left;"><em>medium</em></td>
+<td style="text-align: center;">&gt; 768 px</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>lg</strong></td>
+<td style="text-align: left;"><em>large</em></td>
+<td style="text-align: center;">&gt; 992 px</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>xl</strong></td>
+<td style="text-align: left;"><em>extra large</em></td>
+<td style="text-align: center;">&gt; 1200 px</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>xxl</strong></td>
+<td style="text-align: left;"><em>extra extra large</em></td>
+<td style="text-align: center;">&gt; 1400 px</td>
+</tr>
+</tbody>
+</table>
+<p>La equivalencia entre estos breakpoints y las clases predefinidas de Bootstrap es:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">opción</th>
+<th style="text-align: center;">clase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>xs</strong></td>
+<td style="text-align: center;"><code>.col-&lt;N&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>sm</strong></td>
+<td style="text-align: center;"><code>.col-sm-&lt;N&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>md</strong></td>
+<td style="text-align: center;"><code>.col-sd-&lt;N&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>lg</strong></td>
+<td style="text-align: center;"><code>.col-lg-&lt;N&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>xl</strong></td>
+<td style="text-align: center;"><code>.col-xl-&lt;N&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>xxl</strong></td>
+<td style="text-align: center;"><code>.col-xxl-&lt;N&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>En esta notación <code>&lt;N&gt;</code> representa el ancho del componente representado en número de las columnas que ocupará dentro de la grid. </p>
+<p>Ejemplo:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cm">&lt;!-- ventana &#39;xs&#39;: 12 columnas --&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>.col-12 
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="cm">&lt;!-- ventana &#39;lg&#39;: 9 columnas --&gt;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>.col-lg-9       
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="cm">&lt;!-- ventana &#39;xxl&#39;: 6 columnas --&gt;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>.col-xxl-6      
+</span></code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Asignación de columnas</p>
+<p>No es necesario que en un proyecto se configuren todos los anchos de columnas para todos los breakpoints posibles. </p>
+</div>
+<h2 id="contenedores">Contenedores</h2>
+<p>Un contenedor puede tener varias filas y cada fila contiene doce columnas de la grid. Una columna visual puede ocupar múltiples columnas de la grid.
+Ejemplo: un contenedor con una única fila subdividida en dos columnas visuales
+<div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Hay dos clases de contenedores</p>
+<ul>
+<li><strong>.container:</strong> crea un contenedor adaptable con <strong>ancho máximo fijo</strong> dependiente del tamaño de dispositivo</li>
+<li><strong>.container-fluid:</strong> crea un contenedor adaptable que cubre el 100% del ancho de ventana.</li>
+</ul>
+<p>Un contenedor puede estar atado a los viewpoints.</p>
+<p>Ejemplo: un container “large" se puede definir así:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container-lg&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    ...
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h3 id="contenedores-responsivos">Contenedores responsivos</h3>
+<p>Estos contenedores cubren el 100% del ancho de ventana si éste es inferior a las dimensiones de breakpoint elegdos, sino su ancho queda limitado al ancho de columna asignado. </p>
+<p>Opciones implementadas:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">opción</th>
+<th style="text-align: center;">contenedor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>sm</strong></td>
+<td style="text-align: center;"><code>.container-sm</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>md</strong></td>
+<td style="text-align: center;"><code>.container-sd</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>lg</strong></td>
+<td style="text-align: center;"><code>.container-lg</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>xl</strong></td>
+<td style="text-align: center;"><code>.container-xl</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>xxl</strong></td>
+<td style="text-align: center;"><code>.container-xxl</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="estructura-de-la-grid">Estructura de la grid</h2>
+<p>Los elementos de una fila pueden ocupar varias columnas. Para aprovechar el ancho disponible la suma de columnas usadas por los elementos debe dar doce.
+Ejemplo: un elemento que ocupa 5 columnas y otro ocupa 7:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>    .col-sm-5   
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    .col-sm-7
+</span></code></pre></div>
+Si la suma de columnas da más de doce los elementos cambian de fila automáticamente.</p>
+<p>A un mismo elemento se le puede asignar varias clases distintas. </p>
+<p>Ejemplo: una columna con ancho relativo variable de 4 columnas (pantallas pequeñas) a 6 columnas (pantallas grandes) y una clase de estilo personalizada:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-sm-4  col-lg-6  columna&quot;</span><span class="p">&gt;</span>  ... <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="componentes-de-bootstrap">Componentes de Bootstrap</h2>
+<p>Son elementos HTML reutilizables, con estilo predeterminado pero personalizables. En la sección “Componentes" de la página oficial se encuentra un abanico de componentes disponibles para copiar y pegar.</p>
+<p><a href="https://getbootstrap.com/docs/5.3/components/accordion/"><strong>Componentes de Bootstrap</strong></a></p>
+<h2 id="iconos-de-bootstrap">Iconos de bootstrap</h2>
+<p>Bootstrap tiene su propio repositorio de íconos escalables, los cuales se pueden usar por descarga o por CDN. Cada ícono disponible tiene su código de elemento en la página web para poder añadirlo al proyecto donde se requiera. Asimismo, para que funcione el ícono por CDN hay que añadir en el <em>head</em> de HTML el enlace de fuente que se indica en la seccion “Install".</p>
+<p><a href="https://icons.getbootstrap.com"><strong>Galería de íconos de Bootstrap</strong></a></p>
+<p>Los íconos pueden instalarse localmente via NPM:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>npm<span class="w"> </span>i<span class="w"> </span>bootstrap-icons
+</span></code></pre></div></p>
+<h3 id="web-font">Web font</h3>
+<p>Los iconos pueden importarse todos juntos mediante CDN. El link del CDN se asigna dentro del <code>head</code> del archivo HTML:</p>
+<div class="language-html highlight"><span class="filename">Importación Iconos - CDN</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="cm">&lt;!-- archivo HTML --&gt;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    ...
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>El ícono elegido de la galería viene en formato SVG (formato de imagen vectorial) ,el cual puede llamarse por su nombre de clase (campo <em>'Icon font'</em>):</p>
+<div class="language-html highlight"><span class="filename">Icono en maqueta HTML</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="cm">&lt;!-- archivo HTML --&gt;</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;bi bi-windows&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>  <span class="cm">&lt;!-- Icono Windows --&gt;</span>
+</span></code></pre></div>
+<p>El tamaño y color del ícono se modifica con CSS mediante las propiedades <code>font-size</code> y <code>color</code>:</p>
+<div class="language-css highlight"><span class="filename">Estilo de íconos SVG</span><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c">/* archivo CSS (ó sección &lt;style&gt; del HTML) */</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nt">i</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="c">/* altura -&gt; se toma al icono como si fuera una letra */</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">250</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="c">/* color */</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">slateblue</span><span class="p">;</span><span class="w">  </span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Iconos descargables</p>
+<p>El sitio de Bootstrap permite tanto la descarga individual de los íconos como la descarga en archivo comprimido del paquete completo. En estos casos no es necesario asignar la ruta al servidor CDN.</p>
+</div>
+<h3 id="icono-svg-embebido">Ícono SVG embebido</h3>
+<p>El ícono SVG también se puede importar en formato texto dentro del archivo HTML:</p>
+<div class="language-html highlight"><span class="filename">SVG embebido</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="cm">&lt;!-- Icono &#39;X circle fill&#39; --&gt;</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;250px&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;250px&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;currentColor&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;bi bi-x-circle-fill&quot;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&quot;0 0 16 16&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>  <span class="p">&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&quot;M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z&quot;</span><span class="p">/&gt;</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>En este caso las dimensiones de indican con los atributos <code>width</code> ó <code>height</code> (no hace falta indicar ambos).</p>
+<p>El color y el tamaño también se pueden indicar con ayuda del CSS:</p>
+<div class="language-css highlight"><span class="filename">Estilo de icono embebido</span><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nt">svg</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">128</span><span class="kt">px</span><span class="p">;</span><span class="w">       </span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="flexbox-en-bootstrap">Flexbox en Bootstrap</h2>
+<h3 id="flexbox">Flexbox</h3>
+<p>Flexbox significa <em>'CSS Flexible Box Layout'</em>. Sirve para que los elementos adaptables ubicados dentro de un contenedor se distribuyan automáticamente en base al tamaño del dispositivo. </p>
+<p>Flexbox usa <em>'contenedores flex'</em> para agrupar los elementos de la página. Flexbox viene integrado en CSS y se usa como:</p>
+<div class="language-html highlight"><span class="filename">Elemento Flexbox en HTML</span><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="cm">&lt;!-- HTML --&gt;</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;contenedor&quot;</span><span class="p">&gt;</span> 
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>Mi contenedor
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<div class="language-css highlight"><span class="filename">Elemento Flexbox en CSS</span><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c">/*  CSS */</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="p">.</span><span class="nc">contenedor</span><span class="p">{</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span><span class="w"> </span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="clase-d-flex">Clase <em>d-flex</em></h3>
+<p>Bootstrap integra Flexbox en sus <strong>clase predefinida <code>d-flex</code></strong>:</p>
+<div class="language-html highlight"><span class="filename">Elemento Flexbox en Bootstrap</span><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="cm">&lt;!-- HTML --&gt;</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;d-flex&quot;</span><span class="p">&gt;</span> 
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>Mi contenedor
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Esta clase trae una serie de propiedades predefinidas basadas en las de Flexbox. Algunas de las más importantes se señalan a continuación.</p>
+<h3 id="flex-direction">flex-direction</h3>
+<p>Establece el eje principal del contenedor, la dirección en la cual se colocan los elementos internos.
+Opciones: </p>
+<ul>
+<li>row: fila, de izquierda a derecha;</li>
+<li>row-reverse: fila, de derecha a izquierda</li>
+<li>column: columna, de arriba a abajo</li>
+<li>column-reverse: columna, de abajo a arriba.</li>
+</ul>
+<h3 id="justify-content">justify-content</h3>
+<p>Define cómo se distribuyen los elementos en el <strong>eje principal</strong>. Opciones en Bootstrap:</p>
+<ul>
+<li>justify-content-start</li>
+<li>justify-content-end</li>
+<li>justify-content-center</li>
+<li>justify-content-between</li>
+<li>justify-content-around</li>
+<li>justify-content-evenly</li>
+</ul>
+<h3 id="align-items">align-items</h3>
+<p>Define cómo se distribuyen los elementos en el eje perpendicular al eje principal (<em>eje secundario</em>). Opciones en Bootstrap:</p>
+<ul>
+<li>align-items-start</li>
+<li>align-items-end</li>
+<li>align-items-center</li>
+<li>align-items-baseline</li>
+<li>align-items-stretch</li>
+</ul>
+<h3 id="flex-wrap">flex-wrap</h3>
+<p>Determina si los elementos deben ajustarse para que estén en una misma línea o si se les permite distribuirse en varias líneas si es necesario. Opciones:</p>
+<ul>
+<li>flex-nowrap   → elementos “apretados" en la misma línea</li>
+<li>flex-wrap     → elementos en varias líneas si no hay espacio</li>
+<li>flex-wrap-reverse</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+    
+  </body>
+</html>

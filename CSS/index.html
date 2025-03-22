@@ -1,0 +1,1550 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../HTML/">
+      
+      
+        <link rel="next" href="../Bootstrap/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>CSS - Basicos Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="CSS - Basicos Web" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="./assets/images/social/CSS.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="None" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="CSS - Basicos Web" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="./assets/images/social/CSS.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#css" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Basicos Web" class="md-header__button md-logo" aria-label="Basicos Web" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Basicos Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CSS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambia a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambia a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambia a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambia a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Basicos Web" class="md-nav__button md-logo" aria-label="Basicos Web" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Basicos Web
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Indice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    contenidos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            contenidos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HTML/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    CSS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    CSS
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tipo-archivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipo archivo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comentarios-en-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comentarios en CSS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opciones-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opciones de uso
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Opciones de uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estilos-en-linea" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estilos en línea
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elemento-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elemento &lt;style&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archivo-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archivo CSS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selectores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selectores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selectores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selector-de-tipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selector de tipo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selector-de-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selector de clase
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selector-de-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selector de ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectores-de-atributo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selectores de atributo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priorizar-estilos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorizar estilos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicar-estilos-al-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicar estilos al body
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propiedades-de-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propiedades de CSS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propiedades de CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#color-de-fuente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color de fuente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tamano-de-fuente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tamaño de fuente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-de-fuente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipo de fuente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tamano-de-imagenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tamaño de Imágenes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bordes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bordes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-de-fondo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color de fondo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#padding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Padding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#margen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Margen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidades-de-longitud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unidades de longitud
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unidades de longitud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unidades-de-longitud-absolutas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unidades de longitud absolutas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unidades-de-longitud-relativas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unidades de longitud relativas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colores-en-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colores en CSS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Colores en CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codigos-hexadecimales-para-colores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Códigos hexadecimales para colores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valores-rgb-para-colores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Valores RGB para colores
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables CSS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#heredar-variables-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heredar variables CSS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Bootstrap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bootstrap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tipo-archivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipo archivo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comentarios-en-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comentarios en CSS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opciones-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opciones de uso
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Opciones de uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estilos-en-linea" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estilos en línea
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elemento-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elemento &lt;style&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archivo-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archivo CSS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selectores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selectores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selectores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selector-de-tipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selector de tipo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selector-de-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selector de clase
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selector-de-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selector de ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectores-de-atributo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selectores de atributo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priorizar-estilos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorizar estilos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicar-estilos-al-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicar estilos al body
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propiedades-de-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propiedades de CSS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propiedades de CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#color-de-fuente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color de fuente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tamano-de-fuente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tamaño de fuente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-de-fuente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipo de fuente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tamano-de-imagenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tamaño de Imágenes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bordes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bordes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-de-fondo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color de fondo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#padding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Padding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#margen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Margen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidades-de-longitud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unidades de longitud
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unidades de longitud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unidades-de-longitud-absolutas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unidades de longitud absolutas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unidades-de-longitud-relativas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unidades de longitud relativas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colores-en-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colores en CSS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Colores en CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codigos-hexadecimales-para-colores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Códigos hexadecimales para colores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valores-rgb-para-colores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Valores RGB para colores
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables CSS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#heredar-variables-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heredar variables CSS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="css">CSS</h1>
+<p>Es un lenguaje basado en reglas. Esas reglas determinarán qué estilo darle a cada elemento definido en HTML. </p>
+<h2 id="tipo-archivo">Tipo archivo</h2>
+<p>Los archivos CSS deben terminar en <strong>.css</strong>.</p>
+<h2 id="comentarios-en-css">Comentarios en CSS</h2>
+<p>Los comentarios se realizan entre las secuencias <code>/*</code> y <code>*/</code> 
+<div class="language-css highlight"><span class="filename">Comentarios en CSS</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c">/*  Este es mi comentario */</span>
+</span></code></pre></div></p>
+<h2 id="opciones-de-uso">Opciones de uso</h2>
+<p>Hay tres opciones:</p>
+<ul>
+<li>Estilos en Linea</li>
+<li>Elemento <code>&lt;style&gt;</code></li>
+<li>Archivo CSS</li>
+</ul>
+<h3 id="estilos-en-linea">Estilos en línea</h3>
+<p>El estilo se añade adentro de las etiquetas HTML como si de atributos se tratara. </p>
+<p>Ejemplo:
+<div class="language-html highlight"><span class="filename">Estilos en linea</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cm">&lt;!-- archivo HTML --&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: blue&quot;</span><span class="p">&gt;</span>  Mi Subtítulo <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h3 id="elemento-style">Elemento <code>&lt;style&gt;</code></h3>
+<p>Se describe el estilo dentro del encabezamiento (<code>head</code>) del archivo HTML. Funciona como una plantilla de estilo contenida dentro del mismo archivo HTML, pudiendo afectar a múltiples tipos de elementos y aplicándoles a todos los elementos de la misma categoría un mismo estilo predeterminado. </p>
+<p>Ejemplo: todos los subtítulos h2  en letra azul: </p>
+<p><div class="language-html highlight"><span class="filename">Elemento 'style'</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cm">&lt;!-- archivo HTML --&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="o">...</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="nt">h2</span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">            </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="o">...</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Este método permite aplicar múltiples opciones de estilo a cada categoría de elementos indicada: tamaño fuente, bordes, color de fondo, sombras etc. </p>
+<div class="admonition tip">
+<p class="admonition-title">Indentado recomendado</p>
+<p>Las guías de estilo de CSS recomiendan indentar con <strong>dos</strong> espacios.</p>
+</div>
+<h3 id="archivo-css">Archivo CSS</h3>
+<p>En esta opción se crea la plantilla de estilo dentro de un archivo dedicado terminado en <em>.css</em>. Lo habitual es llamar a este archivo <em>style.css</em>, pero también puede llamarse <em>styles.css</em> o <em>main.css</em>.</p>
+<p>Para que el archivo HTML pueda invocar la guía de estilos debe pasarse el nombre de archivo CSS, esto se hace con la etiqueta link dentro de la cabeza del archivo HTML, como un metadato más:
+<div class="language-html highlight"><span class="filename">Archivo CSS</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cm">&lt;!-- archivo HTML --&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span> 
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    ...
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Prestar atención a la definición del atributo <code>rel</code> como <code>stylesheet</code>, esto define la lectura del archivo CSS como guia de estilos.</p>
+<h2 id="selectores">Selectores</h2>
+<h3 id="selector-de-tipo">Selector de tipo</h3>
+<p>Los selectores de tipo apuntan a un tipo de elemento HTML en base a su etiqueta. Por ejemplo p apunta a los párrafos, h1 a los títulos etc. </p>
+<p>Ejemplo uso: párrafos rojos
+<div class="language-css highlight"><span class="filename">selector tipo</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c">/* archivo CSS */</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">p</span><span class="p">{</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span>
+</span></code></pre></div>
+Todas las asignaciones de propiedades terminan en punto y coma (<strong>;</strong>).</p>
+<p>Varios selectores de tipo pueden compartir estilo. Estos se indican separados por comas: 
+<div class="language-css highlight"><span class="filename">selector tipo - varios tipos</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c">/* archivo CSS */</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nt">p</span><span class="o">,</span><span class="w"> </span><span class="nt">ul</span><span class="o">,</span><span class="w"> </span><span class="nt">ol</span><span class="o">,</span><span class="w"> </span><span class="nt">h3</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">brown</span><span class="p">;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">}</span>
+</span></code></pre></div></p>
+<h3 id="selector-de-clase">Selector de clase</h3>
+<p>Las clases son definidas por el diseñador de la página HTML y pueden agrupar múltiples elementos. A cada elemento se le puede asignar una clase en su definición en la hoja de maquetado:
+<div class="language-html highlight"><span class="filename">elemento HTML con clase</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cm">&lt;!-- archivo HTML --&gt;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="p">&lt;</span><span class="nt">etiqueta</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;nombre-clase&quot;</span> <span class="err">...</span> <span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">etiqueta</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Y en la hoja de estilos CSS se apunta a la clase poniendo un punto delante:
+<div class="language-css highlight"><span class="filename">selector clase - asignacion estilo</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c">/* archivo CSS */</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="p">.</span><span class="nc">nombre-clase</span><span class="p">{</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="err">...</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="p">}</span>
+</span></code></pre></div>
+Un mismo elemento puede formar parte de varias clases al mismo tiempo, cuyos nombres aparecen separados por espacios en la definición y todas entre las mismas comillas:
+<div class="language-html highlight"><span class="filename">elemento HTML - múltiples clases</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="cm">&lt;!-- archivo HTML --&gt;</span>   
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="p">&lt;</span><span class="nt">etiqueta</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;clase-1 clase-2 clase-3&quot;</span> <span class="err">...</span> <span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">etiqueta</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<p>Se acostumbra usar <em>guiones</em> en los nombres de las clases, separando las palabras que lo forman.</p>
+<h3 id="selector-de-id">Selector de ID</h3>
+<p>Para asignarle estilo a los elementos en base a su identificador se los llama con un numeral (<strong>#</strong>): 
+<div class="language-css highlight"><span class="filename">ID</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">#</span><span class="nn">mi_identificador</span><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="err">...</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="p">}</span>
+</span></code></pre></div></p>
+<h3 id="selectores-de-atributo">Selectores de atributo</h3>
+<p>A los elementos de un mismo tipo se los puede diferenciar en base a sus atributos. Estos se indican entre corchetes ( <code>[]</code> ). </p>
+<p>Ejemplo: enlaces a un sitio específico, en negrita y sin subrayado.
+<div class="language-css highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">=</span><span class="s2">&quot;sitio_X&quot;</span><span class="o">]</span><span class="p">{</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="n">text_decoration</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="kc">bold</span><span class="p">;</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="p">}</span>
+</span></code></pre></div></p>
+<h3 id="priorizar-estilos">Priorizar estilos</h3>
+<p>Si se intenta asignar varios estilos a un mismo elemento, se da prioridad de aplicación a los estilos más específicos frente a los más generales.Por ejemplo, dentro del archivo CSS la jerarquía se ordena de mayor a menor así:</p>
+<ul>
+<li>identificador;</li>
+<li>clase;</li>
+<li>tipo de elemento.</li>
+</ul>
+<p>Si se realizan dos modificaciones de estilo con igual jerarquía el resultado será la aplicación del último estilo indicado. Si en cambio las modificaciones se realizan en distintos lugares la jerarquía queda así:</p>
+<ul>
+<li>Estilo en línea;</li>
+<li>Elemento <code>&lt;style&gt;</code>;</li>
+<li>Archivo CSS.</li>
+</ul>
+<p>Las modificaciones en línea tienen la mayor prioridad por ser las más específicas. Para incrementar la prioridad de un estilo de manera artificial a cada propiedad se le asigna la etiqueta <code>!important</code>. Ejemplo:
+<div class="language-css highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nt">color</span><span class="o">:</span><span class="w"> </span><span class="nt">blue</span><span class="w"> </span><span class="o">!</span><span class="nt">important</span><span class="o">;</span>
+</span></code></pre></div></p>
+<h3 id="aplicar-estilos-al-body">Aplicar estilos al <code>body</code></h3>
+<p>Modificar las propiedades del body permite dar un estilo predeterminado a todos los elementos visibles, el cual podrá ser reemplazado por los estilos asignados  posteriormente a los elementos particulares.</p>
+<h2 id="propiedades-de-css">Propiedades de CSS</h2>
+<h3 id="color-de-fuente">Color de fuente</h3>
+<p>El color de un texto se indica con la propiedad <code>color</code>:
+<div class="language-css highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nt">color</span><span class="o">:</span><span class="w"> </span><span class="nt">black</span><span class="o">;</span><span class="w"> </span>
+</span></code></pre></div>
+Los colores requeridos pueden especificarse en RGB (rojo-verde-azul) ó en HSV. Los editores de código suelen traer integrada una paleta para tal fin.</p>
+<h3 id="tamano-de-fuente">Tamaño de fuente</h3>
+<p>El tamaño de fuente se controla con el atributo <code>font-size</code>:
+<div class="language-css highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nt">font-size</span><span class="o">:</span><span class="w"> </span><span class="nt">30px</span><span class="o">;</span>
+</span></code></pre></div>
+Hay varias unidades de medida para especificar tamaño. Por ejemplo <strong><code>px</code></strong> permite indicar el tamaño en pixeles.</p>
+<h3 id="tipo-de-fuente">Tipo de fuente</h3>
+<p>El tipo de caligrafía (<em>nombre de familia</em>) se asigna con el atributo <code>font-family</code>:
+<div class="language-css highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nt">font-family</span><span class="o">:</span><span class="w"> </span><span class="nt">Verdana</span><span class="o">;</span>
+</span></code></pre></div>
+Se pueden asignar varios tipos distintos de fuentes separados por comas, donde los primeros tendrán prioridad para ser asignados. </p>
+<div class="admonition info">
+<p class="admonition-title">Nombres de Familias</p>
+<p>Si los nombres de familia de fuentes tienen espacios en blanco estos nombres se indican entre comillas. En cambio los nombres genéricos (nombres escritos con minúsculas y guiones) <strong>nunca</strong> van entre comillas.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Google Fonts</p>
+<p>En el sitio de Google Fonts: <a href="http://fonts.google.com">fonts.google.com</a> hay reservada una colección de fuentes para usar. Se elige la fuente que se quiere usar y se copia el código indicado en <code>&lt;link&gt;</code> al <em>head</em> de HTML para que esté disponible. Luego para asignar esa fuente elegida a un elemento se hace la asignación mediante el atributo <em>font-family</em>.</p>
+</div>
+<h3 id="tamano-de-imagenes">Tamaño de Imágenes</h3>
+<p>El ancho de las imágenes puede especificarse con la propiedad <code>width</code>, en tanto que la altura se especifica con la propiedad <code>height</code>
+<div class="language-css highlight"><span class="filename">Dimensiones absolutas</span><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nt">img</span><span class="p">{</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="p">}</span>
+</span></code></pre></div>
+Indicando ambas propiedades se obliga al navegador a ajustar la imagen al tamaño especificado. Se puede indicar sólo una de estas propiedades, entonces el navegador intentará ajustar la imagen manteniendo la proporción de dimensiones original.</p>
+<p>El tamaño puede ajustarse a un porcentaje de la ventana del navegador. Ejemplo:
+<div class="language-css highlight"><span class="filename">ancho relativo a la ventana</span><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nt">width</span><span class="o">:</span><span class="w"> </span><span class="nt">30</span><span class="o">%;</span>
+</span></code></pre></div></p>
+<h3 id="bordes">Bordes</h3>
+<p>Se puede marcar un borde recuadrando el elemento que elijamos. Para ello se indican algunas propiedades necesarias:
+<div class="language-css highlight"><span class="filename">Estilos de borde</span><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nt">border-width</span><span class="o">:</span><span class="w"> </span><span class="nt">5px</span><span class="o">;</span><span class="w">      </span><span class="c">/* espesor */</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nt">border-color</span><span class="o">:</span><span class="w"> </span><span class="nt">blue</span><span class="o">;</span><span class="w">     </span><span class="c">/* color */</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="nt">border-style</span><span class="o">:</span><span class="w"> </span><span class="nt">solid</span><span class="o">;</span><span class="w">    </span><span class="c">/* estilo de linea*/</span>
+</span></code></pre></div></p>
+<p>Para redondear los bordes hay una propiedad dedicada llamada <code>border-radius</code>:
+<div class="language-css highlight"><span class="filename">Redondeo de borde</span><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nt">border-radius</span><span class="o">:</span><span class="w"> </span><span class="nt">5px</span><span class="o">;</span>
+</span></code></pre></div>
+Esta propiedad puede afectar también a las imágenes que sean bordeadas, dando lugar a imágenes circulares u ovaladas. </p>
+<p>El estilo del borde creado se indica con la propiedad <code>border-style</code>. Algunas opciones para el estilo de borde:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>opción</strong></th>
+<th style="text-align: left;"><strong>estilo borde</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">none</td>
+<td style="text-align: left;">ninguno</td>
+</tr>
+<tr>
+<td style="text-align: center;">solid</td>
+<td style="text-align: left;">color sólido</td>
+</tr>
+<tr>
+<td style="text-align: center;">dotted</td>
+<td style="text-align: left;">punteado</td>
+</tr>
+<tr>
+<td style="text-align: center;">dashed</td>
+<td style="text-align: left;">líneas entrecortadas</td>
+</tr>
+<tr>
+<td style="text-align: center;">double</td>
+<td style="text-align: left;">doble línea</td>
+</tr>
+<tr>
+<td style="text-align: center;">groove</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">ridge</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">inset</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">outset</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>No es necesario que todos los bordes tengan el mismo estilo. Se puede asignar estilo por pares de valores:</p>
+<div class="language-css highlight"><span class="filename">Órdenes de asignación de bordes</span><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nt">border-style</span><span class="o">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">todos</span><span class="o">&gt;</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="nt">border-style</span><span class="o">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">arriba-abajo</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">izquierda-derecha</span><span class="o">&gt;</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="nt">border-style</span><span class="o">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">arriba</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">izquierda-derecha</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">abajo</span><span class="o">&gt;</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="nt">border-style</span><span class="o">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">arriba</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">derecha</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">abajo</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">izquierda</span><span class="o">&gt;</span>
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title"><strong>Nemotécnico:</strong></p>
+<p>Los estilos se asignan en <em>sentido horario</em>, empezando desde arriba.</p>
+</div>
+<h3 id="color-de-fondo">Color de fondo</h3>
+<p>Para asignar un color de fondo para un elemento existe la propiedad <strong><em>background-color</em></strong>:
+<div class="language-css highlight"><span class="filename">color de fondo</span><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nt">background-color</span><span class="o">:</span><span class="w"> </span><span class="nt">silver</span><span class="o">;</span>
+</span></code></pre></div>
+Esta propiedad es muy útil usada en conjunto con los objetos <em>div</em> permitiendo crear objetos con un color de fondo predeterminado. Pueden especificarse valores en RGB y HSV.</p>
+<h3 id="padding">Padding</h3>
+<p>Es el <strong>espacio vacío entre el elemento y sus bordes</strong>, formando un margen interno. Se controla con la propiedad <em>padding</em>:
+<div class="language-css highlight"><span class="filename">padding</span><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="nt">padding</span><span class="p">:</span><span class="nd">15px</span><span class="o">;</span>
+</span></code></pre></div>
+Los paddings pueden ser distintos en distintos sentidos. Una forma de indicar el tamaño es mediante las etiquetas:
+<div class="language-css highlight"><span class="filename">padding según ubicación - una linea</span><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nt">padding-top</span><span class="o">:</span><span class="w"> </span><span class="nt">20px</span><span class="o">;</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="nt">padding-right</span><span class="o">:</span><span class="w"> </span><span class="nt">15px</span><span class="o">;</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="nt">padding-left</span><span class="o">:</span><span class="w"> </span><span class="nt">10px</span><span class="o">;</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="nt">padding-bottom</span><span class="o">:</span><span class="w"> </span><span class="nt">5px</span><span class="o">;</span>
+</span></code></pre></div>
+Lo mismo puede hacerse en una sola línea:
+<div class="language-css highlight"><span class="filename">padding segun ubicación</span><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="nt">padding</span><span class="o">:</span><span class="w"> </span><span class="nt">20px</span><span class="w"> </span><span class="nt">15px</span><span class="w"> </span><span class="nt">10px</span><span class="w"> </span><span class="nt">5px</span><span class="o">;</span>
+</span></code></pre></div>
+El color de fondo se controla con la propiedad background-color.</p>
+<h3 id="margen">Margen</h3>
+<p>El margen es el <strong>espacio que está afuera del borde</strong>.Se controla con la etiqueta <em>margin</em>:
+<div class="language-css highlight"><span class="filename">margen</span><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="nt">margin</span><span class="o">:</span><span class="w"> </span><span class="nt">20px</span><span class="o">;</span>
+</span></code></pre></div>
+Los márgenes pueden hacerse asimétricos igual que con el padding y los bordes.</p>
+<h2 id="unidades-de-longitud">Unidades de longitud</h2>
+<p>Referencia: <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units">Valores y unidades CSS</a></p>
+<h3 id="unidades-de-longitud-absolutas">Unidades de longitud absolutas</h3>
+<p>Estas son muy usadas en el formato impreso pero no en pantalla. La excepción es la unidad píxel, que sí se usa habitualmente en pantalla. </p>
+<table>
+<thead>
+<tr>
+<th><strong>Etiqueta</strong></th>
+<th><strong>Unidad</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>px</td>
+<td>pixels</td>
+</tr>
+<tr>
+<td>pt</td>
+<td>puntos</td>
+</tr>
+<tr>
+<td>pc</td>
+<td>picas</td>
+</tr>
+<tr>
+<td>in</td>
+<td>pulgadas</td>
+</tr>
+<tr>
+<td>mm</td>
+<td>milimetros</td>
+</tr>
+<tr>
+<td>cm</td>
+<td>centímetros</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>cuartos de milimetros</td>
+</tr>
+</tbody>
+</table>
+<h3 id="unidades-de-longitud-relativas">Unidades de longitud relativas</h3>
+<p>Las unidades de longitud relativa son relativas a un parámetro adicional. Estas unidades permiten que los elementos de la pagina escalen de forma proporcionada en base al espacio disponible. </p>
+<table>
+<thead>
+<tr>
+<th><strong>Etiqueta</strong></th>
+<th><strong>Unidad</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>em</td>
+<td>Tamaño de letra del elemento padre</td>
+</tr>
+<tr>
+<td>rem</td>
+<td>Tamaño de letra del elemento raíz</td>
+</tr>
+<tr>
+<td>ex</td>
+<td>altura x de la fuente del elemento</td>
+</tr>
+<tr>
+<td>vw</td>
+<td>1% del ancho de ventana gráfica</td>
+</tr>
+<tr>
+<td>vmin</td>
+<td>1% de dimensión mas pequeña de ventana gráfica</td>
+</tr>
+<tr>
+<td>vmax</td>
+<td>1% de dimensión más grande de ventana gráfica</td>
+</tr>
+</tbody>
+</table>
+<p>Las unidades relativas dan pie al <em>'responsive design'</em>, esto es la adaptación de la página a la ventana o la pantalla disponible.</p>
+<h2 id="colores-en-css">Colores en CSS</h2>
+<h3 id="codigos-hexadecimales-para-colores">Códigos hexadecimales para colores</h3>
+<p>Los códigos hexadecimales van precedidos de un numeral y tienen seis dígitos desde el 0 hasta la letra F. Las dos primeras cifras indican el valor de luz roja, las dos segundas el valor de luz verde y las dos últimas la intensidad de luz azul. </p>
+<p>Ejemplos:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Color</strong></th>
+<th><strong>Numero</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rojo</td>
+<td>#FF0000</td>
+</tr>
+<tr>
+<td>Verde</td>
+<td>#00FF00</td>
+</tr>
+<tr>
+<td>Azul</td>
+<td>#0000FF</td>
+</tr>
+<tr>
+<td>Negro</td>
+<td>#000000</td>
+</tr>
+<tr>
+<td>Blanco</td>
+<td># FFFFFF</td>
+</tr>
+</tbody>
+</table>
+<p>Las letras se pueden escribir tanto en minúsculas como en mayusculas pero debe mantenerse la consistencia en el archivo. Si los dígitos de cada color están repetidos se pueden abreviar con un solo carácter, tal como recomienda la guía de estilos de Google. </p>
+<p>Ejemplos:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Color</strong></th>
+<th><strong>Numero</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rojo</td>
+<td>#F00</td>
+</tr>
+<tr>
+<td>Verde</td>
+<td>#0F0</td>
+</tr>
+<tr>
+<td>Azul</td>
+<td>#00F</td>
+</tr>
+<tr>
+<td>Negro</td>
+<td>#000</td>
+</tr>
+<tr>
+<td>Blanco</td>
+<td># FFF</td>
+</tr>
+</tbody>
+</table>
+<h3 id="valores-rgb-para-colores">Valores RGB para colores</h3>
+<p>Los colores se pueden representar también con los valores RGB, que son 3 números que pueden ir desde el cero hasta el 255. Sintaxis:
+<div class="language-css highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="nt">rgb</span><span class="o">(&lt;</span><span class="nt">rojo</span><span class="o">&gt;,&lt;</span><span class="nt">verde</span><span class="o">&gt;,&lt;</span><span class="nt">azul</span><span class="o">&gt;)</span>
+</span></code></pre></div></p>
+<p>Ejemplos:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Color</strong></th>
+<th><strong>Numero</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rojo</td>
+<td>rgb(255, 0, 0 )</td>
+</tr>
+<tr>
+<td>Verde</td>
+<td>rgb(0, 255, 0 )</td>
+</tr>
+<tr>
+<td>Azul</td>
+<td>rgb(0, 0, 255 )</td>
+</tr>
+<tr>
+<td>Negro</td>
+<td>rgb(0, 0, 0 )</td>
+</tr>
+<tr>
+<td>Blanco</td>
+<td>rgb(255, 255, 255 )</td>
+</tr>
+</tbody>
+</table>
+<p>Hay un cuarto parámetro opcional: la opacidad. Este valor va de cero (transparente) a uno (máxima opacidad). Sintaxis:
+<div class="language-css highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="nt">rgba</span><span class="o">(&lt;</span><span class="nt">rojo</span><span class="o">&gt;,</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">verde</span><span class="o">&gt;,</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">azul</span><span class="o">&gt;,</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">alpha</span><span class="o">&gt;)</span>
+</span></code></pre></div></p>
+<h2 id="variables-css">Variables CSS</h2>
+<p>Las variables en CSS se marcan con dos guiones al comienzo del nombre:
+<div class="language-css highlight"><span class="filename">Variable CSS</span><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="nt">--nombre-variable</span><span class="o">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">valor</span><span class="o">&gt;</span>
+</span></code></pre></div>
+Usar variables facilita hacer modificaciones sobre múltiples elementos de la página.
+Para asignar esa variable a una propiedad se usa <code>var()</code>:
+<div class="language-css highlight"><span class="filename">Variable CSS - Asignación</span><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="o">&lt;</span><span class="nt">propiedad</span><span class="o">&gt;:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--nombre-variable</span><span class="o">);</span>
+</span></code></pre></div>
+Es prudente asignar también un valor de respaldo para evitar problemas cuando hay algún error con la asignación de valor a las variables. De este modo el valor de respaldo será el predeterminado en caso de error con la variable:
+<div class="language-css highlight"><span class="filename">Variable CSS - Asignación con valor respaldo</span><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="o">&lt;</span><span class="nt">propiedad</span><span class="o">&gt;:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--nombre-variable</span><span class="o">,</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">valor-respaldo</span><span class="o">&gt;);</span>
+</span></code></pre></div></p>
+<div class="admonition warning">
+<p class="admonition-title">Compatibilidad con navegadores</p>
+<p>no todos los navegadores reconocen las variables CSS. Por ejemplo: Internet Explorer no soporta las variables CSS. Para prevenir problemas es conveniente hacer una asignación de respaldo anterior a la asignación de la variable:
+<div class="language-css highlight"><span class="filename">Asignación de respaldo</span><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="o">&lt;</span><span class="nt">propiedad</span><span class="o">&gt;:</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">valor-respaldo</span><span class="o">&gt;;</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="o">&lt;</span><span class="nt">propiedad</span><span class="o">&gt;:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--nombre-variable</span><span class="o">,</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">valor-respaldo</span><span class="o">&gt;);</span>
+</span></code></pre></div></p>
+</div>
+<h3 id="heredar-variables-css">Heredar variables CSS</h3>
+<p>Las variables CSS se definen dentro de las clases y están disponibles para las clases descendientes. Para que una variable sea disponible globalmente se debe definir dentro del elemento <code>root</code>:
+<div class="language-css highlight"><span class="filename">Variables CSS globales</span><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="w">    </span><span class="nv">--variable-global</span><span class="p">:</span><span class="w"> </span><span class="o">&lt;</span><span class="n">valor</span><span class="o">&gt;</span>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="p">}</span>
+</span></code></pre></div>
+Si a una variable global se le intenta asignar valor desde dentro de una clase entonces lo que se creará es una variable local con igual nombre, la cual estará disponible para la clase y sus descendientes.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+    
+  </body>
+</html>

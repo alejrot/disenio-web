@@ -1,0 +1,1923 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../CSS/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>HTML - Basicos Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="HTML - Basicos Web" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="./assets/images/social/HTML.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="None" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="HTML - Basicos Web" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="./assets/images/social/HTML.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#html" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Basicos Web" class="md-header__button md-logo" aria-label="Basicos Web" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Basicos Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              HTML
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambia a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambia a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambia a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambia a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Basicos Web" class="md-nav__button md-logo" aria-label="Basicos Web" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Basicos Web
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Indice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    contenidos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            contenidos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    HTML
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    HTML
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tipo-archivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipo archivo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formato" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formato
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comentarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comentarios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elemento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elemento
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atributos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#idioma" class="md-nav__link">
+    <span class="md-ellipsis">
+      Idioma
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elementos-graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elementos gráficos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elementos gráficos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#encabezamientos-heading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encabezamientos (heading)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parrafos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Párrafos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imagenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Imágenes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enlaces-externos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enlaces Externos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enlaces-a-secciones-internas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enlaces a Secciones Internas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enlaces-con-imagenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enlaces con Imágenes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enlaces-muertos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enlaces Muertos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listas-no-ordenadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listas no ordenadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listas-ordenadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listas ordenadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linea-horizontal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Línea Horizontal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salto-de-linea" class="md-nav__link">
+    <span class="md-ellipsis">
+      Salto de Línea
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#div" class="md-nav__link">
+    <span class="md-ellipsis">
+      Div
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#barra-de-progreso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Barra de Progreso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marquesina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marquesina
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acordeon-texto-desplegable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acordeón (texto desplegable)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dialogos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diálogos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elementos-de-estilos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elementos de estilos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elementos de estilos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#negrita-y-strong" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negrita y Strong
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cursiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cursiva
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tachado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tachado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#small" class="md-nav__link">
+    <span class="md-ellipsis">
+      Small
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marcado-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marcado texto
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elementos-de-entrada-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elementos de entrada de usuario
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elementos de entrada de usuario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formularios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formularios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#botones-de-radio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Botones de Radio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grupo-de-botones-de-radio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grupo de Botones de Radio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#casillas-de-verificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casillas de Verificación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elementos-de-jerarquia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elementos de Jerarquía
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elementos de Jerarquía">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pie-de-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pie de Página
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contenido-editable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenido editable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color-picker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color Picker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corrector-ortografico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Corrector ortográfico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relacionar-label-con-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relacionar label con input
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agrupar-opciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agrupar opciones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autocompletado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autocompletado
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-para-validar-expresiones-regulares" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns para validar expresiones regulares
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texto-alineado-a-la-derecha" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texto alineado a la derecha
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teclas-de-acceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teclas de acceso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Múltiple
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-atributos-libres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear atributos libres
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autofocus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autofocus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descarga-automatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descarga automática
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#orden-de-formularios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Orden de formularios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-salto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step (salto)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#draggable-arrastrable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Draggable (Arrastrable)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Bootstrap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bootstrap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tipo-archivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipo archivo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formato" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formato
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comentarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comentarios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elemento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elemento
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atributos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#idioma" class="md-nav__link">
+    <span class="md-ellipsis">
+      Idioma
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elementos-graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elementos gráficos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elementos gráficos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#encabezamientos-heading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encabezamientos (heading)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parrafos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Párrafos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imagenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Imágenes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enlaces-externos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enlaces Externos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enlaces-a-secciones-internas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enlaces a Secciones Internas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enlaces-con-imagenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enlaces con Imágenes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enlaces-muertos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enlaces Muertos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listas-no-ordenadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listas no ordenadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listas-ordenadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listas ordenadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linea-horizontal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Línea Horizontal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salto-de-linea" class="md-nav__link">
+    <span class="md-ellipsis">
+      Salto de Línea
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#div" class="md-nav__link">
+    <span class="md-ellipsis">
+      Div
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#barra-de-progreso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Barra de Progreso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marquesina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marquesina
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acordeon-texto-desplegable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acordeón (texto desplegable)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dialogos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diálogos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elementos-de-estilos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elementos de estilos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elementos de estilos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#negrita-y-strong" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negrita y Strong
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cursiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cursiva
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tachado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tachado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#small" class="md-nav__link">
+    <span class="md-ellipsis">
+      Small
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marcado-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marcado texto
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elementos-de-entrada-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elementos de entrada de usuario
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elementos de entrada de usuario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formularios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formularios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#botones-de-radio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Botones de Radio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grupo-de-botones-de-radio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grupo de Botones de Radio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#casillas-de-verificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casillas de Verificación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elementos-de-jerarquia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elementos de Jerarquía
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elementos de Jerarquía">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pie-de-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pie de Página
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contenido-editable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenido editable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color-picker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color Picker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corrector-ortografico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Corrector ortográfico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relacionar-label-con-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relacionar label con input
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agrupar-opciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agrupar opciones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autocompletado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autocompletado
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-para-validar-expresiones-regulares" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns para validar expresiones regulares
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texto-alineado-a-la-derecha" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texto alineado a la derecha
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teclas-de-acceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teclas de acceso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Múltiple
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-atributos-libres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear atributos libres
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autofocus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autofocus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descarga-automatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descarga automática
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#orden-de-formularios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Orden de formularios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-salto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step (salto)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#draggable-arrastrable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Draggable (Arrastrable)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="html">HTML</h1>
+<p>Página de referencia: <a href="https://developer.mozilla.org/es/">MDN de Mozilla</a></p>
+<p>Guia estilos Google: <a href="https://google.github.io/styleguide/htmlcssguide.html">HTML/CSS Guide Style</a></p>
+<h2 id="tipo-archivo">Tipo archivo</h2>
+<p>Los archivos HTML deben tener terminación <code>.html</code>.</p>
+<h2 id="formato">Formato</h2>
+<p>Todo archivo HTML debe comenzar con la declaración de tipo de documento (DTD, Document Type Declaration):
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></code></pre></div>
+El nombre de archivo debe tener extensión .html.</p>
+<h2 id="comentarios">Comentarios</h2>
+<p>Los comentarios se hacen con la secuencia:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">&lt;!--  (contenido)  -- &gt;</span>
+</span></code></pre></div></p>
+<div class="admonition tip">
+<p class="admonition-title">Hint</p>
+<p>Para comentar o descomentar lineas en VSCode / VSCodium pulsar <strong>'Ctrl' + '/'</strong> (<strong>'Ctrl' +'ç'</strong> en Windows)</p>
+</div>
+<h2 id="elemento">Elemento</h2>
+<p>Componente básico de un archivo HTML.
+Etiquetas (Tag)
+Sirven para definir los elementos en el archivo HTML. Son marcadas con paréntesis angulares (<code>&lt;&gt;</code>). Normalmente las etiquetas se usan de a pares, una para apertura (<code>&lt;etiqueta&gt;</code>) y otra para cierre ( <code>&lt;/etiqueta&gt;</code>) la cual incluye una barra. Entre etiquetas se distribuye el contenido.
+Ejemplos:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>  ... <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>  ... <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>  ... <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span> 
+</span></code></pre></div>
+<p>Las etiquetas <em>'Self Closing Tag'</em> no requieren cierre. </p>
+<p>Ejemplo:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">img</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<strong>Opcional:</strong> añadir la barra al final de la etiqueta. Ejemplo:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">img</span><span class="p">/&gt;</span>
+</span></code></pre></div>
+La etiqueta <code>&lt;html&gt;</code> representa la raíz del archivo e incluye dos grandes conjuntos: la cabeza (<code>head</code>) y el cuerpo (<code>body</code>). <code>body</code> encapsula el contenido de la página y suele contener el contenido JavaScript (programas auxiliares),
+en tanto que <code>head</code>  incluye el tíyulo de página, archivos estilos, etc.</p>
+<div class="language-html highlight"><span class="filename">Organización página HTML</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="cm">&lt;!-- Contenido del encabezamiento --&gt;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span> Mi titulo de pagina <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>    
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="cm">&lt;!-- Contenido del cuerpo --&gt;</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span> 
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<div class="admonition hint">
+<p class="admonition-title">Hint: indentado</p>
+<p>Se recomienda indentar con dos espacios. En VSCode se puede cambiar el indentado presionando <strong>'Ctrl' + '['</strong> ó <strong>'Ctrl' + ']'</strong>.</p>
+</div>
+<h2 id="atributos">Atributos</h2>
+<p>Son elementos que alteran aspectos de los elementos.</p>
+<h2 id="idioma">Idioma</h2>
+<p>El idioma se asigna mediante el atributo <code>lang</code> y va dentro de la etiqueta html. </p>
+<p>Ejemplo:
+<div class="language-html highlight"><span class="filename">Atributo idioma</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;es&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>...
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
+La declaración de idioma afecta a los buscadores pero también a los caracteres no ASCII visualizables en la página.</p>
+<p>El orden en que se asignan los atributos a un mismo elemento es irrelevante.</p>
+<h2 id="elementos-graficos">Elementos gráficos</h2>
+<p>A continuación se enumeran los elementos de HTML que permiten crear objetos gráficos: textos, botones, imágenes, etc.</p>
+<h3 id="encabezamientos-heading">Encabezamientos (<em>heading</em>)</h3>
+<p>Los encabezamientos permiten indicar títulos para los contenidos. Van dentro del body del archivo html. Hay seis niveles de jerarquía, del 1 (más importante) al 6 (menos importante).
+<div class="language-html highlight"><span class="filename">Encabezamientos</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span> Titulo <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span> Subtitulo <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    ...
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="p">&lt;</span><span class="nt">h6</span><span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">h6</span><span class="p">&gt;</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<div class="admonition info">
+<p class="admonition-title">Jerarquía y formato</p>
+<p>Si bien HTML les da a cada nivel de <em>headings</em> un tamaño distinto, la elección de etiquetas debe hacerse por <strong>importancia del contenido</strong> y no por formato, el cual puede alterarse mediante CSS. De esta forma los buscadores web pueden clasificar las páginas web (<strong>SEO</strong>) en base a los <em>headings</em>.</p>
+</div>
+<h3 id="parrafos">Párrafos</h3>
+<p>Los párrafos se encapsulan con las etiquetas <code>&lt;p&gt;</code> y <code>&lt;/p&gt;</code>. Los párrafos van dentro del body.</p>
+<div class="language-html highlight"><span class="filename">Párrafo</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="cm">&lt;!-- Párrafo --&gt;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p><strong>Hint:</strong> Para que un texto se vea repartido en varios renglones del editor de texto pulsar Alt + Z.</p>
+<h3 id="imagenes">Imágenes</h3>
+<p>Se indican con etiquetas <img> que son autocontenidas.Si la imagen está ubicada en un servidor remoto se indica en el atributo src (source):
+<div class="language-html highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://direccion_completa.jpg&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
+A las imágenes se les puede asignar una breve descripción para aquellos casos donde la imagen no puede cargarse, esto se hace con el atributo alt:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://direccion_completa.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;una breve descripción.&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Si la imagen está guardada localmente se escribe la ruta relativa al archivo:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;ruta_relativa/archivo.jpg&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
+El directorio de referencia es el que incluye al archivo HTML.</p>
+<div class="admonition warning">
+<p class="admonition-title">Nombres con caracteres no ASCII</p>
+<p>Debe evitarse el uso de caracteres no ASCII (ejemplo: la <em>Ñ</em>) para nombres de archivo dado que pueden dar lugar a errores imprevistos.</p>
+</div>
+<h3 id="enlaces-externos">Enlaces Externos</h3>
+<p>Los enlaces se indican con las etiquetas <a> y </a> y el atributo href indica la dirección de destino:
+<div class="language-html highlight"><span class="filename">Enlace externo</span><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://sitio_web&quot;</span><span class="p">&gt;</span> Texto del enlace   <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Para abrir el enlace en una nueva pestaña se puede añadir el atributo <code>target</code> y asignarle el valor “_blank"
+<div class="language-html highlight"><span class="filename">Enlace externo - Abrir en nueva pestaña</span><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://sitio_web&quot;</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span><span class="p">&gt;</span> Texto del enlace   <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Se recomienda añadir un atributo más para prevenir ataques de tipo <em>'Tabnapping'</em>:
+<div class="language-html highlight"><span class="filename">Enlace externo - Prevencion de 'tabnapping'</span><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://sitio_web&quot;</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;noopener noreferrer&quot;</span><span class="p">&gt;</span>Texto del enlace<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<p>Las opciones agregadas son:</p>
+<ul>
+<li><code>noopener</code> previene el cambio de página donde se hizo click. Por defecto mucos navegadores la agregan automáticamente en cada link;</li>
+<li><code>noreferrer</code>: previene enviar el <em>header</em> del remitente a la nueva página para prevenir una posible suplantación de identidad (<em>spoofing</em>)</li>
+</ul>
+<h3 id="enlaces-a-secciones-internas">Enlaces a Secciones Internas</h3>
+<p>Estos enlaces usan también las etiquetas <code>&lt;a&gt;</code> y <code>&lt;/a&gt;</code> pero con distintos valores de atributos:</p>
+<div class="language-html highlight"><span class="filename">Enlace interno</span><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;#etiqueta_destino&quot;</span><span class="p">&gt;</span> texto_enlace <span class="p">&lt;</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Para apuntar a un sector específico se indica el atributo id (indicador único) del elemento precedido por un numeral (<strong>#</strong>). </p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo: enlace a subtitulo</p>
+<p><div class="language-html highlight"><span class="filename">destino: 'seccion-5'</span><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="cm">&lt;!-- subtitulo con ID --&gt;</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;seccion-5&quot;</span><span class="p">&gt;</span> Tema 5 <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<div class="language-html highlight"><span class="filename">enlace a 'seccion-5'</span><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="cm">&lt;!-- enlace a subtitulo --&gt;</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#seccion-5&quot;</span><span class="p">&gt;</span> Ir al Tema 5 <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+</div>
+<h3 id="enlaces-con-imagenes">Enlaces con Imágenes</h3>
+<p>Las imágenes se pueden usar como enlace.Para ello se coloca un elemento del tipo imagen dentro de un elemento enlace:
+<div class="language-html highlight"><span class="filename">Enlace con imagenes</span><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="cm">&lt;!-- imagen en red --&gt;</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;direccion_enlace&quot;</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://direccion_imagen&quot;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> 
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="cm">&lt;!-- imagen local--&gt;</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;direccion_enlace&quot;</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;ruta_imagen&quot;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> 
+</span></code></pre></div>
+Pueden añadirse todos los atributos vistos previamente.</p>
+<h3 id="enlaces-muertos">Enlaces Muertos</h3>
+<p>Un enlace vacío puede crearse con el numeral , esto es útil en la etapa de diseño:</p>
+<div class="language-html highlight"><span class="filename">Enlaces muertos</span><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span> (Ir a ningún sitio) <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<h3 id="listas-no-ordenadas">Listas no ordenadas</h3>
+<p>Las listas no ordenadas (<em>unordered list</em>) usan la etiqueta <code class="language-html highlight">ul</code> para agrupar los elementos de la lista (<em>list items</em>) indicados con la etiqueta <code>li</code> : 
+<div class="language-html highlight"><span class="filename">Listas no ordenadas</span><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>    <span class="cm">&lt;!-- ... --&gt;</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h3 id="listas-ordenadas">Listas ordenadas</h3>
+<p>Las listas ordenadas (<em>ordered list</em>) usan la etiqueta <code>ol</code> para agrupar los elementos de la lista (<em>list items</em>) indicados con la etiqueta <code>li</code> : 
+<div class="language-html highlight"><span class="filename">Listas ordenadas</span><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="cm">&lt;!-- ... --&gt;</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Los números se asignan automáticamente desde el uno en adelante.</p>
+<h3 id="linea-horizontal">Línea Horizontal</h3>
+<p>La <em>horizontal rule</em>  se indica con la etiqueta <code>hr</code>:
+<div class="language-html highlight"><span class="filename">Linea horizontal</span><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h3 id="salto-de-linea">Salto de Línea</h3>
+<p>Para forzar un salto de línea se usa la etiqueta <strong><em><code>br</code></em></strong>:
+<div class="language-html highlight"><span class="filename">Salto de línea</span><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h3 id="div">Div</h3>
+<p>La etiqueta <code>div</code> sirve para definir “contenedores" de elementos. Se usa para agrupar múltiples elementos , crear componentes, etc.
+<div class="language-html highlight"><span class="filename">Contenedores - div</span><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>   
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>    <span class="cm">&lt;!-- elementos internos --&gt;</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h3 id="barra-de-progreso">Barra de Progreso</h3>
+<p>Con la etiqueta meter se puede crear fácilmente una barra de progreso. Ejemplo: barra al 50%
+<div class="language-html highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="p">&lt;</span><span class="nt">meter</span> <span class="na">min</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;50&quot;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">meter</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Otra opción es usar la etiqueta progress:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="p">&lt;</span><span class="nt">progress</span> <span class="na">min</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;50&quot;</span><span class="p">&gt;</span> 50% <span class="p">&lt;/</span><span class="nt">progress</span><span class="p">&gt;</span>
+</span></code></pre></div>
+El texto entre etiquetas no se ve en todos los navegadores. </p>
+<h3 id="marquesina">Marquesina</h3>
+<p>Una marquesina es un texto que se desliza solo por la pantalla. Utiliza la etiqueta marquee. 
+Ejemplo: un título animado. 
+<div class="language-html highlight"><span class="filename">Titulo en Marquesina</span><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="p">&lt;</span><span class="nt">marquee</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span> Mi Título Móvil  <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;&lt;/</span><span class="nt">marquee</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h3 id="acordeon-texto-desplegable">Acordeón (texto desplegable)</h3>
+<p>Con la etiqueta <code>details</code> se crea un texto desplegable con un clic, cuya parte siempre visible se indica con la etiqueta summary. Útil para dar información extra sobre un elemento.
+<div class="language-html highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="p">&lt;</span><span class="nt">details</span><span class="p">&gt;</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>    <span class="p">&lt;</span><span class="nt">summary</span><span class="p">&gt;</span> Texto siempre visible <span class="p">&lt;/</span><span class="nt">summary</span><span class="p">&gt;</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>    Todo el texto adicional listo para ser visto con un click.
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="p">&lt;/</span><span class="nt">details</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h3 id="dialogos">Diálogos</h3>
+<p>Un cuadro de diálogo siempre abierto:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="p">&lt;</span><span class="nt">dialog</span> <span class="na">open</span><span class="p">&gt;</span> Mi texto <span class="p">&lt;/</span><span class="nt">dialog</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Para que el cuadro de diálogo se abra al presionar un botón y se cierre con otro:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;dlg.showModal()&quot;</span><span class="p">&gt;</span>  Abrir <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>    <span class="p">&lt;</span><span class="nt">dialog</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;dlg&quot;</span><span class="p">&gt;</span> 
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;dlg.close()&quot;</span><span class="p">&gt;</span>  X <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>    Mi texto 
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="p">&lt;/</span><span class="nt">dialog</span><span class="p">&gt;</span>   
+</span></code></pre></div></p>
+<h2 id="elementos-de-estilos">Elementos de estilos</h2>
+<h3 id="negrita-y-strong">Negrita y Strong</h3>
+<p>Los textos más importantes pueden marcarse con la etiqueta <strong><em>strong</em></strong>, esto hace ver los caracteres en negrita:
+<div class="language-html highlight"><span class="filename">Negrita - Strong</span><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span> Texto <span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> 
+</span></code></pre></div>
+Otra opción es usar la etiqueta <code>b</code> (bold), aunque esta se está evitando actualmente.
+<div class="language-html highlight"><span class="filename">Negrita - Bold</span><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span> Texto <span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h3 id="cursiva">Cursiva</h3>
+<p>El texto en cursiva se indica con la etiqueta <code>em</code>:
+<div class="language-html highlight"><span class="filename">Cursiva</span><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span> Texto en cursiva <span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h3 id="tachado">Tachado</h3>
+<p>El tachado de texto se hace con la etiqueta <code>s</code> (<em>strikethrough</em>)
+<div class="language-html highlight"><span class="filename">Tachado</span><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="p">&lt;</span><span class="nt">s</span><span class="p">&gt;</span> Texto tachado <span class="p">&lt;/</span><span class="nt">s</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h3 id="small">Small</h3>
+<p>Esta etiqueta hace la letra más pequeña. Es muy habitual su uso en los pies de página. </p>
+<p>Uso:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="p">&lt;</span><span class="nt">small</span><span class="p">&gt;</span> texto pequeño <span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h3 id="marcado-texto">Marcado texto</h3>
+<p>Usando la etiqueta <em>mark</em> podemos marcar trozos de texto al estilo resaltador.
+<div class="language-html highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>    Un parrafo donde uso un poco  <span class="p">&lt;</span><span class="nt">mark</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background-color=yellow&quot;</span><span class="p">&gt;</span>  el marcador <span class="p">&lt;/</span><span class="nt">mark</span><span class="p">&gt;</span>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="elementos-de-entrada-de-usuario">Elementos de entrada de usuario</h2>
+<h3 id="formularios">Formularios</h3>
+<p>Los formularios usan la etiqueta <code>form</code> para agrupar sus elementos. En el ejemplo se crea un espacio para escribir un texto de entrada (<code>input</code>) y un botón (<code>button</code>) para ordenar el envío. 
+<div class="language-html highlight"><span class="filename">Formulario</span><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;ruta_destino&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;indicaciones&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span> Enviar <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>  
+</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></code></pre></div>
+El atributo <code>placeholder</code> indica un texto marcador de posición, que da una pista sobre la entrada esperada en <code>input</code>. El destino de la respuesta puedeser una URL o un archivo local que se indica con el atributo <code>action</code>. Para impedir el envío de la entrada vacía se agrega el atributo <code>required</code>. </p>
+<p>Los distintos elementos se dibujan en pantalla uno al lado del otro. Para colocarlos en vertical usar el salto de línea  (<code>br</code>) .</p>
+<h3 id="botones-de-radio">Botones de Radio</h3>
+<p>El botón de opción (o botón de radio) se crea con la etiqueta 
+<div class="language-html highlight"><span class="filename">Botón radio</span><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span><span class="p">&gt;</span> Texto descripcion
+</span></code></pre></div>
+Para marcar el botón debe presionarse encima. Para poder presionar tambien sobre el texto de descripción se rodea el botón con la etiqueta <code>label</code>:
+<div class="language-html highlight"><span class="filename">Botón radio - con etiqueta</span><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span><span class="p">&gt;</span> Texto descripcion   <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></code></pre></div>
+La etiqueta <code>label</code> puede tener indicado el atributo <code>for</code> que la vincula al identificador del botón:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;identificador&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a> <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;identificador&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span><span class="p">&gt;</span> Texto descripcion   
+</span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h3 id="grupo-de-botones-de-radio">Grupo de Botones de Radio</h3>
+<p>Para que varios botones forman parte de un mismo grupo y sólo uno pueda seleccionarse a la vez debe agregarse el atributo <code>name</code> a cada botón y darles el mismo valor. </p>
+<p>Ejemplo:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;opcion_1&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nombre_opciones&quot;</span><span class="p">&gt;</span> Opción 1
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;opcion_2&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nombre_opciones&quot;</span><span class="p">&gt;</span> Opción 2
+</span></code></pre></div></p>
+<h3 id="casillas-de-verificacion">Casillas de Verificación</h3>
+<p>Las checkbox  o casillas de verificación se definen también con la etiqueta <em>input</em>:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span><span class="p">&gt;</span> Texto descripción
+</span></code></pre></div>
+Con el atributo checked se puede dejar marcado de forma predeterminada la casilla de verificación:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">checked</span><span class="p">&gt;</span> Texto descripción
+</span></code></pre></div></p>
+<h3 id="value">Value</h3>
+<p>El atributo valor (<code>value</code>) es el argumento que se enviará al servidor si la casilla ó botón de radio fue seleccionado. </p>
+<p>Ejemplo: casillas verificacion.</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;opcion_1&quot;</span> <span class="p">&gt;</span> Opción 1
+</span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;opcion_2&quot;</span> <span class="p">&gt;</span> Opción 2
+</span></code></pre></div>
+<h2 id="elementos-de-jerarquia">Elementos de Jerarquía</h2>
+<p>Estos elementos de HTML afectan a la distribución y la prioridad de los componentes internos de la página.</p>
+<h3 id="main">Main</h3>
+<p>Indica el contenido principal del <code>body</code> entre dos etiquetas:
+<div class="language-html highlight"><span class="filename">Contenido principal - main</span><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>    <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span>
+</span><span id="__span-45-3"><a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>        <span class="cm">&lt;!-- Contenido principal --&gt;</span>
+</span><span id="__span-45-4"><a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a>  <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+</span><span id="__span-45-5"><a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a>  <span class="cm">&lt;!-- ... --&gt;</span>
+</span><span id="__span-45-6"><a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></code></pre></div>
+El contenido <code>main</code> <strong>debe ser único</strong> en la página y no descender de elementos como:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span> 
+</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a><span class="p">&lt;</span><span class="nt">aside</span><span class="p">&gt;</span>
+</span><span id="__span-46-3"><a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a><span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span><span id="__span-46-4"><a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a><span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span><span id="__span-46-5"><a id="__codelineno-46-5" name="__codelineno-46-5" href="#__codelineno-46-5"></a><span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span> 
+</span><span id="__span-46-6"><a id="__codelineno-46-6" name="__codelineno-46-6" href="#__codelineno-46-6"></a><span class="p">&lt;</span><span class="nt">gav</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h3 id="pie-de-pagina">Pie de Página</h3>
+<p>El pie de página va afuera de <code>main</code> (pero dentro del <em>body</em>). Utiliza la etiqueta <code>footer</code>. </p>
+<p>Ejemplo típico: texto de licencia y enlace al post original:
+<div class="language-html highlight"><span class="filename">Pie de página</span><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span><span id="__span-47-2"><a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span> Licencia <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;direccion_enlace&quot;</span><span class="p">&gt;</span> Original <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-47-3"><a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a><span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="contenido-editable">Contenido editable</h2>
+<p>Podemos permitir que el usuario de la página altere el texto de los elementos gracias al atributo <em>contenteditable</em>. Ejemplos:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">contenteditable</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span> Hola soy un div <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-48-2"><a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">contenteditable</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span> Hola soy un div <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="color-picker">Color Picker</h2>
+<p>Creando un elemento <em>input</em> del tipo color podemos crear un botón de color con el cual el usuario puede invocar la paleta de colores e interactuar con ella.
+<div class="language-html highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;color&quot;</span> <span class="p">&gt;</span>
+</span></code></pre></div>
+Para asignar un color por defecto al botón se añade el atributo <em>value</em>:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;color&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;green;&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="corrector-ortografico">Corrector ortográfico</h2>
+<p>Con habilitar el atributo <strong><em>spellcheck</em></strong> dentro de los elementos <em>input</em> se habilita la corrección ortográfica automática.</p>
+<h2 id="relacionar-label-con-input">Relacionar label con input</h2>
+<p>Algunas formas de poner el foco en el elemento de entrada clickeando sobre la etiqueta de texto relacionada.
+Ejemplo texto:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;texto_123&quot;</span> <span class="p">&gt;</span> Poner foco <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-51-2"><a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span>   <span class="na">id</span><span class="o">=</span><span class="s">&quot;texto_123&quot;</span> <span class="p">/&gt;</span>
+</span></code></pre></div>
+Ejemplo <em>checkbox</em>:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;check_123&quot;</span> <span class="p">&gt;</span> Chequear <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-52-2"><a id="__codelineno-52-2" name="__codelineno-52-2" href="#__codelineno-52-2"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span>   <span class="na">id</span><span class="o">=</span><span class="s">&quot;check_123&quot;</span> <span class="p">/&gt;</span>
+</span></code></pre></div></p>
+<h2 id="agrupar-opciones">Agrupar opciones</h2>
+<p>Con el elemento <strong>select</strong> se puede hacer una lista de opciones desplegable. Con la etiqueta option se marca cada opción seleccionable y con la etiqueta optgroup se hacen separadores de texto. Ejemplo:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="p">&lt;</span><span class="nt">select</span><span class="p">&gt;</span>
+</span><span id="__span-53-2"><a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a>    <span class="p">&lt;</span><span class="nt">optgroup</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;Grupo 1&quot;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">optgroup</span><span class="p">&gt;</span>
+</span><span id="__span-53-3"><a id="__codelineno-53-3" name="__codelineno-53-3" href="#__codelineno-53-3"></a>        <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span> Opcion 1 <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-53-4"><a id="__codelineno-53-4" name="__codelineno-53-4" href="#__codelineno-53-4"></a>        <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span> Opcion 2 <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-53-5"><a id="__codelineno-53-5" name="__codelineno-53-5" href="#__codelineno-53-5"></a>    <span class="p">&lt;</span><span class="nt">optgroup</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;Grupo 2&quot;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">optgroup</span><span class="p">&gt;</span>
+</span><span id="__span-53-6"><a id="__codelineno-53-6" name="__codelineno-53-6" href="#__codelineno-53-6"></a>        <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span> Opcion 3 <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-53-7"><a id="__codelineno-53-7" name="__codelineno-53-7" href="#__codelineno-53-7"></a>        <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span> Opcion 4 <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-53-8"><a id="__codelineno-53-8" name="__codelineno-53-8" href="#__codelineno-53-8"></a>        <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span> Opcion 5 <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-53-9"><a id="__codelineno-53-9" name="__codelineno-53-9" href="#__codelineno-53-9"></a><span class="p">&lt;</span><span class="nt">select</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="autocompletado">Autocompletado</h2>
+<p>Una entrada de texto puede tener valores opcionales predeterminados. Con la etiqueta datalist se crea una lista de opciones y esta se invoca dentro del elemento input con el atributo list.
+<div class="language-html highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">list</span><span class="o">=</span><span class="s">&quot;opciones&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;seleccionar&quot;</span><span class="p">&gt;</span>   
+</span><span id="__span-54-2"><a id="__codelineno-54-2" name="__codelineno-54-2" href="#__codelineno-54-2"></a><span class="p">&lt;</span><span class="nt">datalist</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;opciones&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-54-3"><a id="__codelineno-54-3" name="__codelineno-54-3" href="#__codelineno-54-3"></a>    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span> Opcion 1 <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-54-4"><a id="__codelineno-54-4" name="__codelineno-54-4" href="#__codelineno-54-4"></a>    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span> Opcion 2 <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-54-5"><a id="__codelineno-54-5" name="__codelineno-54-5" href="#__codelineno-54-5"></a>    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span> Opcion 3 <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-54-6"><a id="__codelineno-54-6" name="__codelineno-54-6" href="#__codelineno-54-6"></a><span class="p">&lt;/</span><span class="nt">datalist</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="patterns-para-validar-expresiones-regulares">Patterns para validar expresiones regulares</h2>
+<p>El atributo pattern es el que permite exigir un formato de entrada al usuario. Asimismo el atributo title da un texto de ayuda y el atributo required obliga al usuario a cumplir para poder enviar. </p>
+<p>Ejemplo: se requiere escribir tres cifras entre el 0 y el 9
+<div class="language-html highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">pattern</span><span class="o">=</span><span class="s">&quot;[0-9]{3}&quot;</span>
+</span><span id="__span-55-2"><a id="__codelineno-55-2" name="__codelineno-55-2" href="#__codelineno-55-2"></a><span class="na">title</span><span class="o">=</span><span class="s">&quot;Debes poner 3 numeros seguidos para enviar.&quot;</span>
+</span><span id="__span-55-3"><a id="__codelineno-55-3" name="__codelineno-55-3" href="#__codelineno-55-3"></a><span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+</span><span id="__span-55-4"><a id="__codelineno-55-4" name="__codelineno-55-4" href="#__codelineno-55-4"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="texto-alineado-a-la-derecha">Texto alineado a la derecha</h2>
+<p>Con el atributo dir se puede corregir  la orientación de un texto.
+Ejemplo: <strong><em>'rtl'</em></strong> (<em>right to left</em>)
+<div class="language-html highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">dir</span><span class="o">=</span><span class="s">&quot;rtl&quot;</span><span class="p">&gt;</span> Texto a la derecha <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Ejemplo: <strong><em>'ltr'</em></strong> (<em>left to right</em>)
+<div class="language-html highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">dir</span><span class="o">=</span><span class="s">&quot;ltr&quot;</span><span class="p">&gt;</span> Texto a la derecha <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="teclas-de-acceso">Teclas de acceso</h2>
+<p>Con el atributo accesskey especificamos las letras que accionan un elemento. 
+Ejemplo: un botón accionado presionando ‘Alt’+’L’ que envía un mensaje a pantalla.
+<div class="language-html highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">accesskey</span><span class="o">=</span><span class="s">&quot;L&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;alert(&#39;¡Accionado!&#39;)&quot;</span> <span class="p">&gt;</span>
+</span><span id="__span-58-2"><a id="__codelineno-58-2" name="__codelineno-58-2" href="#__codelineno-58-2"></a>    Me selecciono con la letra L.
+</span><span id="__span-58-3"><a id="__codelineno-58-3" name="__codelineno-58-3" href="#__codelineno-58-3"></a><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="multiple">Múltiple</h2>
+<p>El atributo multiple permite seleccionar varios elementos u opciones juntas. 
+Ejemplo: seleccionar uno o varios archivos de imagen jpg
+<div class="language-html highlight"><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;file&quot;</span> <span class="na">accept</span><span class="o">=</span><span class="s">&quot;.jpg&quot;</span> <span class="na">multiple</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Otro ejemplo: varias opciones seleccionables
+<div class="language-html highlight"><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="p">&lt;</span><span class="nt">select</span> <span class="na">multiple</span><span class="p">&gt;</span>
+</span><span id="__span-60-2"><a id="__codelineno-60-2" name="__codelineno-60-2" href="#__codelineno-60-2"></a>    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span> Opcion 1 <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-60-3"><a id="__codelineno-60-3" name="__codelineno-60-3" href="#__codelineno-60-3"></a>    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span> Opcion 2 <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-60-4"><a id="__codelineno-60-4" name="__codelineno-60-4" href="#__codelineno-60-4"></a>    <span class="cm">&lt;!-- ... --&gt;</span>
+</span><span id="__span-60-5"><a id="__codelineno-60-5" name="__codelineno-60-5" href="#__codelineno-60-5"></a><span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="crear-atributos-libres">Crear atributos libres</h2>
+<p>Con el atributo <strong>data-</strong> se pueden crear nuevos atributos. Los valores de estos valores se pueden consultar con el método <strong><em>dataset</em></strong>  en base al <em>id</em> del elemento de referencia.</p>
+<p>Ejemplo: atributos <em>country</em> y <em>style</em> creados y consultables con un click.
+<div class="language-html highlight"><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">data-country</span><span class="o">=</span><span class="s">&quot;Bélgica&quot;</span> <span class="na">data-style</span><span class="o">=</span><span class="s">&quot;Strong Ale&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;someP&quot;</span><span class="p">&gt;</span> 
+</span><span id="__span-61-2"><a id="__codelineno-61-2" name="__codelineno-61-2" href="#__codelineno-61-2"></a>    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">alert(someP.dataset.country+`-`+someP.dataset.style)</span><span class="p">&gt;</span>
+</span><span id="__span-61-3"><a id="__codelineno-61-3" name="__codelineno-61-3" href="#__codelineno-61-3"></a>        Show 
+</span><span id="__span-61-4"><a id="__codelineno-61-4" name="__codelineno-61-4" href="#__codelineno-61-4"></a>    <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="autofocus">Autofocus</h2>
+<p>El atributo autofocus permite enfocar automáticamente al elemento que lo incluye. Ejemplo:
+<div class="language-html highlight"><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">autofocus</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="descarga-automatica">Descarga automática</h2>
+<p>Podemos ordenar la descarga de un elemento al que apunta un enlace añadiendo el atributo <strong><em>download</em></strong> a la etiqueta del enlace.</p>
+<p>Ejemplo: factura en PDF para descargar
+<div class="language-html highlight"><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">download</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;factura.pdf&quot;</span><span class="p">&gt;</span> Descargar factura <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="orden-de-formularios">Orden de formularios</h2>
+<p>El completado de elementos input se puede ordenar con ayuda del atributo tabindex. Los números se recorren de menor a mayor. Ejemplo: un formulario que se completa de abajo hacia arriba
+<div class="language-html highlight"><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&quot;4&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span> 
+</span><span id="__span-64-2"><a id="__codelineno-64-2" name="__codelineno-64-2" href="#__codelineno-64-2"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&quot;3&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span> 
+</span><span id="__span-64-3"><a id="__codelineno-64-3" name="__codelineno-64-3" href="#__codelineno-64-3"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&quot;2&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span> 
+</span><span id="__span-64-4"><a id="__codelineno-64-4" name="__codelineno-64-4" href="#__codelineno-64-4"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span> 
+</span></code></pre></div></p>
+<h2 id="step-salto">Step (salto)</h2>
+<p>Para controlar el incremento o decremento de un número controlado con el mouse se especifica el atributo step.</p>
+<p>Ejemplo 1: un número que puede subir o bajar con el mouse de décima en décima
+<div class="language-html highlight"><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;number&quot;</span> <span class="na">min</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;10&quot;</span> <span class="na">step</span><span class="o">=</span><span class="s">0.1</span>
+</span></code></pre></div>
+Ejemplo 2: una barra deslizante que cambia de a saltos
+<div class="language-html highlight"><pre><span></span><code><span id="__span-66-1"><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;range&quot;</span><span class="na">min</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">step</span><span class="o">=</span><span class="s">&quot;10&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Ejemplo 3: un reloj que da saltos de 15 minutos (900 segudos)
+<div class="language-html highlight"><pre><span></span><code><span id="__span-67-1"><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;time&quot;</span> <span class="na">min</span><span class="o">=</span><span class="s">&quot;09:00&quot;</span> <span class="na">step</span><span class="o">=</span><span class="s">&quot;900&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h2 id="draggable-arrastrable">Draggable (Arrastrable)</h2>
+<p>Usa JavaScript: https://youtu.be/U6W-xE_GzCo?list=TLPQMDgwMzIwMjOAtf43LnsPsw&amp;t=924</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+    
+  </body>
+</html>
